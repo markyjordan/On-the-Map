@@ -18,6 +18,7 @@
 		E28BF9F52550DA5C006669BE /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9F42550DA5C006669BE /* UdacityClient.swift */; };
 		E28BF9FD2550DAA2006669BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9FC2550DAA2006669BE /* Constants.swift */; };
 		E28BFA05255385E2006669BE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA04255385E1006669BE /* GradientView.swift */; };
+		E28BFA0F2557415B006669BE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA0E2557415B006669BE /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E28BF9F42550DA5C006669BE /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
 		E28BF9FC2550DAA2006669BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E28BFA04255385E1006669BE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E28BFA0E2557415B006669BE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		E28BF9EF254EFD3C006669BE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E28BFA0E2557415B006669BE /* Colors.swift */,
 				E28BFA04255385E1006669BE /* GradientView.swift */,
 				E28BF9BE254EFBDE006669BE /* Main.storyboard */,
 				E28BF9C3254EFBE3006669BE /* LaunchScreen.storyboard */,
@@ -318,6 +321,7 @@
 				E28BF9FD2550DAA2006669BE /* Constants.swift in Sources */,
 				E28BF9F52550DA5C006669BE /* UdacityClient.swift in Sources */,
 				E28BFA05255385E2006669BE /* GradientView.swift in Sources */,
+				E28BFA0F2557415B006669BE /* Colors.swift in Sources */,
 				E28BF9BD254EFBDE006669BE /* ViewController.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
 				E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */,
