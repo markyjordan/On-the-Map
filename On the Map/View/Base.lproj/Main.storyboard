@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-M8-j20">
-                                <rect key="frame" x="16" y="335" width="382" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-M8-j20">
+                                <rect key="frame" x="16" y="389" width="382" height="128"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kn6-X0-J3Y">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -40,6 +40,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfJ-M8-j20" secondAttribute="trailing" constant="16" id="ewS-n4-B0c"/>
+                            <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fvf-Yn-2qV"/>
+                            <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="j6y-yO-KMP"/>
+                            <constraint firstItem="BfJ-M8-j20" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mOK-K5-Xam"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yDy-U7-ABT"/>
                         </constraints>
                     </view>
