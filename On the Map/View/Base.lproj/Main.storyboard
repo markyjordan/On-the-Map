@@ -35,14 +35,22 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In3-sT-jF7">
+                                <rect key="frame" x="145" y="348.5" width="124" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="In3-sT-jF7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D10-oh-1HU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfJ-M8-j20" secondAttribute="trailing" constant="16" id="ewS-n4-B0c"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fvf-Yn-2qV"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="j6y-yO-KMP"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mOK-K5-Xam"/>
+                            <constraint firstItem="BfJ-M8-j20" firstAttribute="top" secondItem="In3-sT-jF7" secondAttribute="bottom" constant="20" id="vEP-Zk-8PI"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yDy-U7-ABT"/>
                         </constraints>
                     </view>
