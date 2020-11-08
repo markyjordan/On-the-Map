@@ -24,7 +24,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="deT-vK-AXc"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-xJ-5H9">
@@ -32,7 +32,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tIC-Nc-QfB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-cj-wxe" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
@@ -41,7 +41,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tlS-gj-qO5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -54,9 +54,9 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In3-sT-jF7">
-                                <rect key="frame" x="145" y="327.5" width="124" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="140" y="326.5" width="134" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="hfw-ia-8gv">
@@ -68,14 +68,31 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-Kc-A1w">
                                 <rect key="frame" x="197" y="683" width="20" height="20"/>
                             </activityIndicatorView>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-M0-s6Y">
+                                <rect key="frame" x="88" y="558" width="238" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lS-Uv-RFG">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4S-Jx-zVE">
+                                        <rect key="frame" x="184" y="0.0" width="54" height="30"/>
+                                        <state key="normal" title="Sign Up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qr4-M0-s6Y" firstAttribute="top" secondItem="BfJ-M8-j20" secondAttribute="bottom" constant="20" id="53t-WN-OJo"/>
                             <constraint firstItem="1ig-Kc-A1w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6iI-EA-p3j"/>
                             <constraint firstItem="hfw-ia-8gv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="7HF-dr-JPJ"/>
                             <constraint firstItem="In3-sT-jF7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D10-oh-1HU"/>
                             <constraint firstItem="hfw-ia-8gv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ELO-z2-ruQ"/>
+                            <constraint firstItem="qr4-M0-s6Y" firstAttribute="centerX" secondItem="BfJ-M8-j20" secondAttribute="centerX" id="Xqs-83-1IH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfJ-M8-j20" secondAttribute="trailing" constant="48" id="ewS-n4-B0c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ig-Kc-A1w" secondAttribute="trailing" constant="197" id="fRh-R9-pIO"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fvf-Yn-2qV"/>
@@ -208,7 +225,7 @@
     </scenes>
     <designables>
         <designable name="2GZ-cj-wxe">
-            <size key="intrinsicContentSize" width="47" height="33"/>
+            <size key="intrinsicContentSize" width="49" height="34"/>
         </designable>
     </designables>
     <resources>
