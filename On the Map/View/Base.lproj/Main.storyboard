@@ -35,7 +35,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-cj-wxe">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-cj-wxe" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="318" height="50"/>
                                         <color key="backgroundColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -45,6 +45,11 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -201,6 +206,11 @@
             <point key="canvasLocation" x="2245" y="493"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2GZ-cj-wxe">
+            <size key="intrinsicContentSize" width="47" height="33"/>
+        </designable>
+    </designables>
     <resources>
         <image name="logo-u" width="62" height="62"/>
         <systemColor name="systemBackgroundColor">
