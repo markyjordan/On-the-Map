@@ -111,6 +111,13 @@
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="yDy-U7-ABT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="1ig-Kc-A1w" id="sEL-gE-I0b"/>
+                        <outlet property="emailTextField" destination="Kn6-X0-J3Y" id="Izt-wE-Xe3"/>
+                        <outlet property="loginButton" destination="2GZ-cj-wxe" id="Mik-N7-d3F"/>
+                        <outlet property="passwordTextField" destination="hsg-xJ-5H9" id="uPM-XH-pZa"/>
+                        <outlet property="signupButton" destination="Q4S-Jx-zVE" id="mUK-mF-l89"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
