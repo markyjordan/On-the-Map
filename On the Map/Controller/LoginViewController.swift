@@ -6,14 +6,37 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 class LoginViewController: UIViewController {
 
+    // MARK: - Outlets/Properties
+    
+
+    
+    // MARK: - Life Cycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        // lock the view orientation to portrait mode
+        AppUtility.lockOrientation(.portrait)
     }
 
-
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+       
+        // reset the view orientation when view is being removed
+        AppUtility.lockOrientation(.all)
+    }
+    
+    
+    
 }
 
