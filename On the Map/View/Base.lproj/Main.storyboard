@@ -81,6 +81,9 @@
                                         <rect key="frame" x="166" y="0.0" width="54" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vT-6J-Lh5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

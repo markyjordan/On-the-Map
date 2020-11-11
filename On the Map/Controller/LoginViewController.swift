@@ -9,7 +9,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-class LoginViewController: UIViewController, LoginButtonDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
 
     // MARK: - Outlets/Properties
     
@@ -45,6 +45,10 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     // method to call when user taps login button
     
     // method to call when user taps signup button
+    @IBAction func signUpButtonTapped(_ sender: Any) {
+        
+        
+    }
     
     // MARK: - Facebook Authentication
     
@@ -64,6 +68,20 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
 //    }
     
     // MARK: - Helper Methods
+    
+    func setLoggingIn(_ loggingIn: Bool) {
+        if loggingIn {
+            activityIndicator.startAnimating()
+        } else {
+            activityIndicator.stopAnimating()
+        }
+        
+        // enable/disable UI views
+        emailTextField.isEnabled = !loggingIn
+        passwordTextField.isEnabled = !loggingIn
+        loginButton.isEnabled = !loggingIn
+        loginViaWebsiteButton.isEnabled = !loggingIn
+    }
     
 }
 
