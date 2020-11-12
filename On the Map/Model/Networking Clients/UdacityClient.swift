@@ -9,11 +9,13 @@ import Foundation
 
 class UdacityClient {
     
-    static let apiKey = myUdacityAPIKey
+    static let apiKey = Constants.udacityUserAPIKey
     
     struct Auth {
         static var firstName = ""
         static var lastName = ""
+        static var objectId = ""
+        static var userId = ""
     }
     
     enum Endpoints {
@@ -29,17 +31,17 @@ class UdacityClient {
         var stringValue: String {
             switch self {
             case .login:
-                return
+                return Endpoints.base + "/session"
             case .signUp:
-                return
+                return Constants.udacityURLSignUp
             case .getStudentLocation:
-                return
+                return Endpoints.base + "/StudentLocation?limit=100"
             case .addStudentLocation:
-                return
+                return Endpoints.base + "/StudentLocation"
             case .updateStudentLocation:
-                return
+                return Endpoints.base + "/StudentLocation/" + Auth.objectId
             case .getUserInformation:
-                return
+                return Endpoints.base + "/users/" + Auth.userId
             }
         }
         
