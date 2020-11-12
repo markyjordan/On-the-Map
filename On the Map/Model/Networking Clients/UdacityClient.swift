@@ -11,4 +11,9 @@ class UdacityClient {
     
     static let apiKey = myUdacityAPIKey
     
+    struct Auth {
+        static var firstName = ""
+        static var lastName = ""
+    }
+    
 }
