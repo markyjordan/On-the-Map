@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B2B17671872765B7E4EE690 /* Pods_On_the_MapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3DECEEFD162F9CAD5D1AEA /* Pods_On_the_MapTests.framework */; };
 		9554E99AD0E07C686049C6F6 /* Pods_On_the_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886C2EC33501AC0810308341 /* Pods_On_the_Map.framework */; };
+		E267851D255E724600741DAE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267851C255E724600741DAE /* Location.swift */; };
 		E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9B8254EFBDE006669BE /* AppDelegate.swift */; };
 		E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */; };
 		E28BF9BD254EFBDE006669BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9BC254EFBDE006669BE /* LoginViewController.swift */; };
@@ -54,6 +55,7 @@
 		886C2EC33501AC0810308341 /* Pods_On_the_Map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_On_the_Map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D437F432DDE43ECA3F5DE77 /* Pods-On the Map-On the MapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map-On the MapUITests.release.xcconfig"; path = "Target Support Files/Pods-On the Map-On the MapUITests/Pods-On the Map-On the MapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9A3DECEEFD162F9CAD5D1AEA /* Pods_On_the_MapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_On_the_MapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E267851C255E724600741DAE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E28BF9B5254EFBDE006669BE /* On the Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28BF9B8254EFBDE006669BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				E28BFA45255D1277006669BE /* Networking Clients */,
 				E28BF9F22550D89A006669BE /* Requests */,
 				E28BF9F32550D8A3006669BE /* Responses */,
+				E267851C255E724600741DAE /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				E28BFA2325574F62006669BE /* ListViewController.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
 				E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */,
+				E267851D255E724600741DAE /* Location.swift in Sources */,
 				E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
