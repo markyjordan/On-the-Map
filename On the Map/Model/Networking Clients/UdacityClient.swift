@@ -51,4 +51,9 @@ class UdacityClient {
         }
     }
     
+    
+    class func login(email: String, password: String, completion: @escaping (Bool, Error?) -> Void) {
+        
+    }
+    
 }
