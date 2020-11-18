@@ -19,6 +19,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDel
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
+    var facebookLoginButton = FBLoginButton()
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -40,7 +42,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDel
         AppUtility.lockOrientation(.all)
     }
     
-    // MARK: - Actions
+    // MARK: - Navigation
     
     // method to call when user taps login button
     
@@ -49,23 +51,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDel
         
         
     }
-    
-    // MARK: - Facebook Authentication
-    
-    // setup facebook login button
-    private func setupFacebookLoginButton() {
-        let button = FBLoginButton()
-        
-        // request additional read permissions
-        button.permissions = ["public_profile", "email"]
-        
-        // set button layout constraints and add it to the view
-    }
-    
-    // function to check for an existing facebook access token at load
-//    if let token = AccessToken.current,!token.isExpired {
-//            // User is logged in, do work such as go to next view controller.
-//    }
     
     // MARK: - Helper Methods
     
@@ -82,6 +67,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDel
         loginButton.isEnabled = !loggingIn
         loginViaWebsiteButton.isEnabled = !loggingIn
     }
+    
+    // MARK: - OAuth
+    
+    // Facebook Authentication
+    
+    // setup facebook login button
+    private func setupFacebookLoginButton() {
+        
+        // request additional read permissions
+        facebookLoginButton.permissions = ["public_profile", "email"]
+        
+        // set button layout constraints and add it to the view
+    }
+    
+    // function to check for an existing facebook access token at load
+//    if let token = AccessToken.current,!token.isExpired {
+//            // User is logged in, do work such as go to next view controller.
+//    }
     
 }
 
