@@ -12,6 +12,7 @@
 		E21DDBB4256115FD00480F16 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB3256115FD00480F16 /* Session.swift */; };
 		E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB82563B6A200480F16 /* UserProfile.swift */; };
 		E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */; };
+		E21DDBC72564E2FA00480F16 /* LocationPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */; };
 		E267851D255E724600741DAE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267851C255E724600741DAE /* Location.swift */; };
 		E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9B8254EFBDE006669BE /* AppDelegate.swift */; };
 		E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */; };
@@ -61,6 +62,7 @@
 		E21DDBB3256115FD00480F16 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		E21DDBB82563B6A200480F16 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocationViewController.swift; sourceTree = "<group>"; };
+		E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewViewController.swift; sourceTree = "<group>"; };
 		E267851C255E724600741DAE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E28BF9B5254EFBDE006669BE /* On the Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28BF9B8254EFBDE006669BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				E28BFA1D25574F4A006669BE /* MapViewViewController.swift */,
 				E28BFA2225574F62006669BE /* ListTableViewController.swift */,
 				E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */,
+				E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				E28BFA0F2557415B006669BE /* Colors.swift in Sources */,
 				E28BFA332557B055006669BE /* CustomButton.swift in Sources */,
 				E28BF9BD254EFBDE006669BE /* LoginViewController.swift in Sources */,
+				E21DDBC72564E2FA00480F16 /* LocationPreviewViewController.swift in Sources */,
 				E21DDBB4256115FD00480F16 /* Session.swift in Sources */,
 				E28BFA2325574F62006669BE /* ListTableViewController.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
