@@ -25,7 +25,7 @@
 		E28BFA05255385E2006669BE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA04255385E1006669BE /* GradientView.swift */; };
 		E28BFA0F2557415B006669BE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA0E2557415B006669BE /* Colors.swift */; };
 		E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA1D25574F4A006669BE /* MapViewViewController.swift */; };
-		E28BFA2325574F62006669BE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA2225574F62006669BE /* ListViewController.swift */; };
+		E28BFA2325574F62006669BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA2225574F62006669BE /* ListTableViewController.swift */; };
 		E28BFA332557B055006669BE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA322557B055006669BE /* CustomButton.swift */; };
 		E28BFA3B2558E70B006669BE /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA3A2558E70B006669BE /* AppUtility.swift */; };
 		FD0F2BBF3EDBF36473B0FC55 /* Pods_On_the_Map_On_the_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD7DEA2A55AA67059BAAD9 /* Pods_On_the_Map_On_the_MapUITests.framework */; };
@@ -79,7 +79,7 @@
 		E28BFA04255385E1006669BE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E28BFA0E2557415B006669BE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E28BFA1D25574F4A006669BE /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
-		E28BFA2225574F62006669BE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E28BFA2225574F62006669BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		E28BFA322557B055006669BE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E28BFA3A2558E70B006669BE /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		FEDFFCF1778CCEFEF0CF3CB0 /* Pods-On the Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map.release.xcconfig"; path = "Target Support Files/Pods-On the Map/Pods-On the Map.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 			children = (
 				E28BF9BC254EFBDE006669BE /* LoginViewController.swift */,
 				E28BFA1D25574F4A006669BE /* MapViewViewController.swift */,
-				E28BFA2225574F62006669BE /* ListViewController.swift */,
+				E28BFA2225574F62006669BE /* ListTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -504,7 +504,7 @@
 				E28BFA332557B055006669BE /* CustomButton.swift in Sources */,
 				E28BF9BD254EFBDE006669BE /* LoginViewController.swift in Sources */,
 				E21DDBB4256115FD00480F16 /* Session.swift in Sources */,
-				E28BFA2325574F62006669BE /* ListViewController.swift in Sources */,
+				E28BFA2325574F62006669BE /* ListTableViewController.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
 				E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */,
 				E267851D255E724600741DAE /* Location.swift in Sources */,
