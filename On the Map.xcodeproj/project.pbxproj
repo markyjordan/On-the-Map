@@ -11,6 +11,7 @@
 		9554E99AD0E07C686049C6F6 /* Pods_On_the_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886C2EC33501AC0810308341 /* Pods_On_the_Map.framework */; };
 		E21DDBB4256115FD00480F16 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB3256115FD00480F16 /* Session.swift */; };
 		E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB82563B6A200480F16 /* UserProfile.swift */; };
+		E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */; };
 		E267851D255E724600741DAE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267851C255E724600741DAE /* Location.swift */; };
 		E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9B8254EFBDE006669BE /* AppDelegate.swift */; };
 		E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */; };
@@ -59,6 +60,7 @@
 		9A3DECEEFD162F9CAD5D1AEA /* Pods_On_the_MapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_On_the_MapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DDBB3256115FD00480F16 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		E21DDBB82563B6A200480F16 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocationViewController.swift; sourceTree = "<group>"; };
 		E267851C255E724600741DAE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E28BF9B5254EFBDE006669BE /* On the Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28BF9B8254EFBDE006669BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				E28BF9BC254EFBDE006669BE /* LoginViewController.swift */,
 				E28BFA1D25574F4A006669BE /* MapViewViewController.swift */,
 				E28BFA2225574F62006669BE /* ListTableViewController.swift */,
+				E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
 				E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */,
 				E267851D255E724600741DAE /* Location.swift in Sources */,
+				E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */,
 				E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

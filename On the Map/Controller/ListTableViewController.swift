@@ -9,9 +9,19 @@ import UIKit
 
 class ListTableViewController: UIViewController {
 
+    // MARK: - Outlets/Properties
+    
+    
+    
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    
+    // MARK: - Table View Delegate and Data Source Methods
+    
     
 }
