@@ -52,7 +52,27 @@ class UdacityClient {
     }
     
     
-    class func login(email: String, password: String, completion: @escaping (Bool, Error?) -> Void) {
+    class func login(email: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
+    
+    class func getUserProfile(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
+    
+    class func getStudentLocations(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
+    
+    class func addStudentLocation {
+        
+    }
+    
+    class func updateStudentLocation {
+        
+    }
+    
+    class func logout(completionHandler: @escaping () -> Void {
         
     }
     
