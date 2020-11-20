@@ -11,7 +11,7 @@
 		9554E99AD0E07C686049C6F6 /* Pods_On_the_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886C2EC33501AC0810308341 /* Pods_On_the_Map.framework */; };
 		E21DDBB4256115FD00480F16 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB3256115FD00480F16 /* Session.swift */; };
 		E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB82563B6A200480F16 /* UserProfile.swift */; };
-		E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */; };
+		E21DDBC22564DFD700480F16 /* PostLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC12564DFD700480F16 /* PostLocationVC.swift */; };
 		E21DDBC72564E2FA00480F16 /* LocationPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */; };
 		E21DDBD42567FEC600480F16 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBD32567FEC600480F16 /* Alert.swift */; };
 		E21DDBDD25680E7900480F16 /* MapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBDC25680E7900480F16 /* MapViewVC.swift */; };
@@ -62,7 +62,7 @@
 		9A3DECEEFD162F9CAD5D1AEA /* Pods_On_the_MapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_On_the_MapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DDBB3256115FD00480F16 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		E21DDBB82563B6A200480F16 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocationViewController.swift; sourceTree = "<group>"; };
+		E21DDBC12564DFD700480F16 /* PostLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocationVC.swift; sourceTree = "<group>"; };
 		E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewViewController.swift; sourceTree = "<group>"; };
 		E21DDBD32567FEC600480F16 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E21DDBDC25680E7900480F16 /* MapViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewVC.swift; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 				E28BF9BC254EFBDE006669BE /* LoginVC.swift */,
 				E21DDBDC25680E7900480F16 /* MapViewVC.swift */,
 				E28BFA2225574F62006669BE /* ListTableViewVC.swift */,
-				E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */,
+				E21DDBC12564DFD700480F16 /* PostLocationVC.swift */,
 				E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */,
 			);
 			path = Controller;
@@ -535,7 +535,7 @@
 				E28BFA2325574F62006669BE /* ListTableViewVC.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
 				E267851D255E724600741DAE /* Location.swift in Sources */,
-				E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */,
+				E21DDBC22564DFD700480F16 /* PostLocationVC.swift in Sources */,
 				E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
