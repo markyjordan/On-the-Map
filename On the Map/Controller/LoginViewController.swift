@@ -32,14 +32,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDel
         super.viewWillAppear(animated)
        
         // lock the view orientation to portrait mode
-        AppUtility.lockOrientation(.portrait)
+        Utilities.lockOrientation(.portrait)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
        
         // reset the view orientation when view is being removed
-        AppUtility.lockOrientation(.all)
+        Utilities.lockOrientation(.all)
     }
     
     // MARK: - Navigation

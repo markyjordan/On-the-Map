@@ -1,5 +1,5 @@
 //
-//  AppUtility.swift
+//  Utilities.swift
 //  On the Map
 //
 //  Created by Marky Jordan on 11/8/20.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AppUtility {
+class Utilities {
     
     static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
     

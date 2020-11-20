@@ -29,7 +29,7 @@
 		E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA1D25574F4A006669BE /* MapViewViewController.swift */; };
 		E28BFA2325574F62006669BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA2225574F62006669BE /* ListTableViewController.swift */; };
 		E28BFA332557B055006669BE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA322557B055006669BE /* CustomButton.swift */; };
-		E28BFA3B2558E70B006669BE /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA3A2558E70B006669BE /* AppUtility.swift */; };
+		E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA3A2558E70B006669BE /* Utilities.swift */; };
 		FD0F2BBF3EDBF36473B0FC55 /* Pods_On_the_Map_On_the_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD7DEA2A55AA67059BAAD9 /* Pods_On_the_Map_On_the_MapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +85,7 @@
 		E28BFA1D25574F4A006669BE /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		E28BFA2225574F62006669BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		E28BFA322557B055006669BE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		E28BFA3A2558E70B006669BE /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		E28BFA3A2558E70B006669BE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FEDFFCF1778CCEFEF0CF3CB0 /* Pods-On the Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map.release.xcconfig"; path = "Target Support Files/Pods-On the Map/Pods-On the Map.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +140,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E21DDBCE2567F52B00480F16 /* App Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E28BF9FC2550DAA2006669BE /* Constants.swift */,
+				E28BFA3A2558E70B006669BE /* Utilities.swift */,
+			);
+			path = "App Utilities";
+			sourceTree = "<group>";
+		};
 		E28BF9AC254EFBDE006669BE = {
 			isa = PBXGroup;
 			children = (
@@ -168,8 +177,7 @@
 				E28BF9C6254EFBE3006669BE /* Info.plist */,
 				E28BF9B8254EFBDE006669BE /* AppDelegate.swift */,
 				E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */,
-				E28BF9FC2550DAA2006669BE /* Constants.swift */,
-				E28BFA3A2558E70B006669BE /* AppUtility.swift */,
+				E21DDBCE2567F52B00480F16 /* App Utilities */,
 				E28BF9EE254EFD36006669BE /* Model */,
 				E28BF9EF254EFD3C006669BE /* View */,
 				E28BF9F0254EFD43006669BE /* Controller */,
@@ -505,7 +513,7 @@
 				E28BF9F52550DA5C006669BE /* UdacityClient.swift in Sources */,
 				E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */,
 				E28BFA05255385E2006669BE /* GradientView.swift in Sources */,
-				E28BFA3B2558E70B006669BE /* AppUtility.swift in Sources */,
+				E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */,
 				E28BFA0F2557415B006669BE /* Colors.swift in Sources */,
 				E28BFA332557B055006669BE /* CustomButton.swift in Sources */,
 				E28BF9BD254EFBDE006669BE /* LoginViewController.swift in Sources */,
