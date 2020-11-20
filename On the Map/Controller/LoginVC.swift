@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LoginVC.swift
 //  On the Map
 //
 //  Created by Marky Jordan on 11/1/20.
@@ -9,7 +9,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
+class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
 
     // MARK: - Outlets/Properties
     
