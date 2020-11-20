@@ -13,6 +13,8 @@
 		E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBB82563B6A200480F16 /* UserProfile.swift */; };
 		E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */; };
 		E21DDBC72564E2FA00480F16 /* LocationPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */; };
+		E21DDBD42567FEC600480F16 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBD32567FEC600480F16 /* Alert.swift */; };
+		E21DDBDD25680E7900480F16 /* MapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DDBDC25680E7900480F16 /* MapViewVC.swift */; };
 		E267851D255E724600741DAE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267851C255E724600741DAE /* Location.swift */; };
 		E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9B8254EFBDE006669BE /* AppDelegate.swift */; };
 		E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */; };
@@ -26,7 +28,6 @@
 		E28BF9FD2550DAA2006669BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BF9FC2550DAA2006669BE /* Constants.swift */; };
 		E28BFA05255385E2006669BE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA04255385E1006669BE /* GradientView.swift */; };
 		E28BFA0F2557415B006669BE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA0E2557415B006669BE /* Colors.swift */; };
-		E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA1D25574F4A006669BE /* MapViewViewController.swift */; };
 		E28BFA2325574F62006669BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA2225574F62006669BE /* ListTableViewController.swift */; };
 		E28BFA332557B055006669BE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA322557B055006669BE /* CustomButton.swift */; };
 		E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA3A2558E70B006669BE /* Utilities.swift */; };
@@ -63,6 +64,8 @@
 		E21DDBB82563B6A200480F16 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocationViewController.swift; sourceTree = "<group>"; };
 		E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewViewController.swift; sourceTree = "<group>"; };
+		E21DDBD32567FEC600480F16 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		E21DDBDC25680E7900480F16 /* MapViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewVC.swift; sourceTree = "<group>"; };
 		E267851C255E724600741DAE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E28BF9B5254EFBDE006669BE /* On the Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28BF9B8254EFBDE006669BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +85,6 @@
 		E28BF9FC2550DAA2006669BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E28BFA04255385E1006669BE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E28BFA0E2557415B006669BE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		E28BFA1D25574F4A006669BE /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		E28BFA2225574F62006669BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		E28BFA322557B055006669BE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E28BFA3A2558E70B006669BE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -145,8 +147,19 @@
 			children = (
 				E28BF9FC2550DAA2006669BE /* Constants.swift */,
 				E28BFA3A2558E70B006669BE /* Utilities.swift */,
+				E21DDBD32567FEC600480F16 /* Alert.swift */,
 			);
 			path = "App Utilities";
+			sourceTree = "<group>";
+		};
+		E21DDBD22567F75200480F16 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E28BFA45255D1277006669BE /* Clients */,
+				E28BF9F22550D89A006669BE /* Requests */,
+				E28BF9F32550D8A3006669BE /* Responses */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		E28BF9AC254EFBDE006669BE = {
@@ -178,6 +191,7 @@
 				E28BF9B8254EFBDE006669BE /* AppDelegate.swift */,
 				E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */,
 				E21DDBCE2567F52B00480F16 /* App Utilities */,
+				E21DDBD22567F75200480F16 /* Networking */,
 				E28BF9EE254EFD36006669BE /* Model */,
 				E28BF9EF254EFD3C006669BE /* View */,
 				E28BF9F0254EFD43006669BE /* Controller */,
@@ -207,9 +221,6 @@
 		E28BF9EE254EFD36006669BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E28BFA45255D1277006669BE /* Networking Clients */,
-				E28BF9F22550D89A006669BE /* Requests */,
-				E28BF9F32550D8A3006669BE /* Responses */,
 				E267851C255E724600741DAE /* Location.swift */,
 				E21DDBB3256115FD00480F16 /* Session.swift */,
 				E21DDBB82563B6A200480F16 /* UserProfile.swift */,
@@ -233,10 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				E28BF9BC254EFBDE006669BE /* LoginViewController.swift */,
-				E28BFA1D25574F4A006669BE /* MapViewViewController.swift */,
 				E28BFA2225574F62006669BE /* ListTableViewController.swift */,
 				E21DDBC12564DFD700480F16 /* PostLocationViewController.swift */,
 				E21DDBC62564E2FA00480F16 /* LocationPreviewViewController.swift */,
+				E21DDBDC25680E7900480F16 /* MapViewVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,12 +274,12 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		E28BFA45255D1277006669BE /* Networking Clients */ = {
+		E28BFA45255D1277006669BE /* Clients */ = {
 			isa = PBXGroup;
 			children = (
 				E28BF9F42550DA5C006669BE /* UdacityClient.swift */,
 			);
-			path = "Networking Clients";
+			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,7 +523,9 @@
 				E28BF9FD2550DAA2006669BE /* Constants.swift in Sources */,
 				E28BF9F52550DA5C006669BE /* UdacityClient.swift in Sources */,
 				E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */,
+				E21DDBD42567FEC600480F16 /* Alert.swift in Sources */,
 				E28BFA05255385E2006669BE /* GradientView.swift in Sources */,
+				E21DDBDD25680E7900480F16 /* MapViewVC.swift in Sources */,
 				E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */,
 				E28BFA0F2557415B006669BE /* Colors.swift in Sources */,
 				E28BFA332557B055006669BE /* CustomButton.swift in Sources */,
@@ -521,7 +534,6 @@
 				E21DDBB4256115FD00480F16 /* Session.swift in Sources */,
 				E28BFA2325574F62006669BE /* ListTableViewController.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
-				E28BFA1E25574F4A006669BE /* MapViewViewController.swift in Sources */,
 				E267851D255E724600741DAE /* Location.swift in Sources */,
 				E21DDBC22564DFD700480F16 /* PostLocationViewController.swift in Sources */,
 				E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */,
