@@ -168,8 +168,19 @@
                     <view key="view" contentMode="scaleToFill" id="Llt-sb-dM5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-TI-m6n">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3hj-fM-Abq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sTg-TI-m6n" firstAttribute="bottom" secondItem="3hj-fM-Abq" secondAttribute="bottom" id="7ZI-Km-gls"/>
+                            <constraint firstItem="sTg-TI-m6n" firstAttribute="top" secondItem="3hj-fM-Abq" secondAttribute="top" id="Um9-KY-p1R"/>
+                            <constraint firstItem="sTg-TI-m6n" firstAttribute="trailing" secondItem="3hj-fM-Abq" secondAttribute="trailing" id="hhx-Dv-CPj"/>
+                            <constraint firstItem="sTg-TI-m6n" firstAttribute="leading" secondItem="3hj-fM-Abq" secondAttribute="leading" id="qkg-Yi-Ibp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="On the Map" id="V1b-mc-Agu">
                         <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="cAH-Cm-mnr"/>
@@ -181,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIt-s0-na9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245" y="-200"/>
+            <point key="canvasLocation" x="2243.4782608695655" y="-200.22321428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MSw-md-iFU">
