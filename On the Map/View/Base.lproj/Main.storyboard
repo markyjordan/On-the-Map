@@ -144,11 +144,11 @@
             </objects>
             <point key="canvasLocation" x="417" y="128"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="gAD-qd-Uxe">
             <objects>
                 <navigationController id="dMp-Cj-EAq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icon_mapview-selected" id="cHr-7n-Yd6"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_mapview-deselected" id="cHr-7n-Yd6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HpA-AR-Cim">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -209,11 +209,11 @@
             </objects>
             <point key="canvasLocation" x="3132" y="128"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ex8-wr-QDe">
             <objects>
                 <navigationController id="v9q-yv-8ba" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icon_listview-selected" id="akf-az-0f3"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_listview-deselected" id="akf-az-0f3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OX9-3O-ZoQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -226,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="1341" y="493"/>
         </scene>
-        <!--List Table ViewVC-->
+        <!--On the Map-->
         <scene sceneID="tyL-jl-QOR">
             <objects>
                 <viewController id="ROw-Dr-97c" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
@@ -253,7 +253,13 @@
                         <viewLayoutGuide key="safeArea" id="RqJ-SA-U9l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="E50-kl-rS8"/>
+                    <navigationItem key="navigationItem" title="On the Map" id="E50-kl-rS8">
+                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="ee9-XU-B9h"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="icon_addpin" id="FJQ-wL-hnb"/>
+                            <barButtonItem image="icon_refresh" id="AO2-l0-Tmk"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJp-wq-2dH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,8 +288,8 @@
     </designables>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>
-        <image name="icon_listview-selected" width="75" height="50"/>
-        <image name="icon_mapview-selected" width="75" height="50"/>
+        <image name="icon_listview-deselected" width="75" height="50"/>
+        <image name="icon_mapview-deselected" width="75" height="50"/>
         <image name="icon_refresh" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
         <systemColor name="systemBackgroundColor">
