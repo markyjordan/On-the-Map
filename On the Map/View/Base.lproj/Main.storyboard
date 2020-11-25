@@ -194,7 +194,23 @@
             </objects>
             <point key="canvasLocation" x="2243.4782608695655" y="-200.22321428571428"/>
         </scene>
-        <!--Add LocationVC-->
+        <!--Navigation Controller-->
+        <scene sceneID="KiL-1q-top">
+            <objects>
+                <navigationController id="8Yr-vW-4Tx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oOU-d7-L1T">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AFO-wg-QHI" kind="relationship" relationship="rootViewController" id="a2e-6Z-hAp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHU-Fv-t2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3171" y="128"/>
+        </scene>
+        <!--Add Location-->
         <scene sceneID="MSw-md-iFU">
             <objects>
                 <viewController id="AFO-wg-QHI" customClass="AddLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
@@ -203,7 +219,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5te-vn-x0e">
-                                <rect key="frame" x="48" y="368" width="318" height="170"/>
+                                <rect key="frame" x="48" y="390" width="318" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ti-Qx-VT6">
                                         <rect key="frame" x="0.0" y="0.0" width="318" height="50"/>
@@ -235,11 +251,14 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="UEi-bq-2J5" kind="show" id="g51-R7-Jwq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_world" translatesAutoresizingMaskIntoConstraints="NO" id="PYm-q9-gV2">
-                                <rect key="frame" x="181" y="277" width="52" height="67"/>
+                                <rect key="frame" x="181" y="299" width="52" height="67"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l7Z-wX-0SR"/>
@@ -253,11 +272,14 @@
                             <constraint firstItem="l7Z-wX-0SR" firstAttribute="trailing" secondItem="5te-vn-x0e" secondAttribute="trailing" constant="48" id="wmx-ID-uhX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2yu-Kp-Mn4"/>
+                    <navigationItem key="navigationItem" title="Add Location" id="2yu-Kp-Mn4">
+                        <barButtonItem key="backBarButtonItem" id="bha-Ei-Xd8"/>
+                        <barButtonItem key="leftBarButtonItem" title="CANCEL" id="Pgc-1E-NWi"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhS-wn-RGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3132" y="128"/>
+            <point key="canvasLocation" x="4059" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ex8-wr-QDe">
@@ -345,10 +367,11 @@
                         <viewLayoutGuide key="safeArea" id="CS7-7M-PFS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wLb-Gr-0CL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFM-st-ykE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4012" y="128"/>
+            <point key="canvasLocation" x="4939" y="128"/>
         </scene>
     </scenes>
     <designables>
