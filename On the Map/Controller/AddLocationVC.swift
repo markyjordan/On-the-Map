@@ -1,5 +1,5 @@
 //
-//  PostLocationVC.swift
+//  AddLocationVC.swift
 //  On the Map
 //
 //  Created by Marky Jordan on 11/17/20.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class PostLocationVC: UIViewController {
+class AddLocationVC: UIViewController {
     
     // MARK: - Outlets/Properties
     

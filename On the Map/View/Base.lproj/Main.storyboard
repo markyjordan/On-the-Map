@@ -194,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="2243.4782608695655" y="-200.22321428571428"/>
         </scene>
-        <!--Post LocationVC-->
+        <!--Add LocationVC-->
         <scene sceneID="MSw-md-iFU">
             <objects>
-                <viewController id="AFO-wg-QHI" customClass="PostLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AFO-wg-QHI" customClass="AddLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2D-3J-4bK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
