@@ -372,8 +372,35 @@
                     <view key="view" contentMode="scaleToFill" id="6wk-wq-a0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-5Q-DE1">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-2t-Y8X" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
+                                <rect key="frame" x="48" y="710" width="318" height="50"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BGR-dC-xCa"/>
+                                </constraints>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CS7-7M-PFS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gkG-2t-Y8X" firstAttribute="centerX" secondItem="CS7-7M-PFS" secondAttribute="centerX" id="G14-lW-d1Q"/>
+                            <constraint firstItem="0BZ-5Q-DE1" firstAttribute="centerX" secondItem="CS7-7M-PFS" secondAttribute="centerX" id="NRy-hY-50a"/>
+                            <constraint firstItem="CS7-7M-PFS" firstAttribute="bottom" secondItem="gkG-2t-Y8X" secondAttribute="bottom" constant="48" id="Pp6-0d-6gt"/>
+                            <constraint firstItem="CS7-7M-PFS" firstAttribute="trailing" secondItem="gkG-2t-Y8X" secondAttribute="trailing" constant="48" id="Vdn-oN-gLr"/>
+                            <constraint firstItem="CS7-7M-PFS" firstAttribute="bottom" secondItem="0BZ-5Q-DE1" secondAttribute="bottom" id="ZPR-2s-FbR"/>
+                            <constraint firstItem="0BZ-5Q-DE1" firstAttribute="leading" secondItem="CS7-7M-PFS" secondAttribute="leading" id="diy-tN-cUD"/>
+                            <constraint firstItem="0BZ-5Q-DE1" firstAttribute="top" secondItem="CS7-7M-PFS" secondAttribute="top" id="fba-iZ-5o8"/>
+                            <constraint firstItem="CS7-7M-PFS" firstAttribute="trailing" secondItem="0BZ-5Q-DE1" secondAttribute="trailing" id="jiL-Zo-5mV"/>
+                            <constraint firstItem="0BZ-5Q-DE1" firstAttribute="centerY" secondItem="CS7-7M-PFS" secondAttribute="centerY" id="lUE-9B-eTI"/>
+                            <constraint firstItem="gkG-2t-Y8X" firstAttribute="leading" secondItem="CS7-7M-PFS" secondAttribute="leading" constant="48" id="nos-Od-2gb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wLb-Gr-0CL"/>
                 </viewController>
@@ -385,6 +412,9 @@
     <designables>
         <designable name="2GZ-cj-wxe">
             <size key="intrinsicContentSize" width="58" height="34"/>
+        </designable>
+        <designable name="gkG-2t-Y8X">
+            <size key="intrinsicContentSize" width="48" height="30"/>
         </designable>
         <designable name="hJR-Ck-nLW">
             <size key="intrinsicContentSize" width="111" height="30"/>
