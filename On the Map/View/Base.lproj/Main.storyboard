@@ -122,6 +122,7 @@
                         <outlet property="loginButton" destination="2GZ-cj-wxe" id="Mik-N7-d3F"/>
                         <outlet property="passwordTextField" destination="hsg-xJ-5H9" id="uPM-XH-pZa"/>
                         <outlet property="signupButton" destination="Q4S-Jx-zVE" id="mUK-mF-l89"/>
+                        <outlet property="verticalStackView" destination="BfJ-M8-j20" id="wqL-mR-oV6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -243,7 +244,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJR-Ck-nLW" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJR-Ck-nLW" userLabel="Find Location Button" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="342" height="50"/>
                                         <color key="backgroundColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -367,7 +368,7 @@
             </objects>
             <point key="canvasLocation" x="2244.927536231884" y="492.85714285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Location-->
         <scene sceneID="Njp-d8-uBx">
             <objects>
                 <viewController id="UEi-bq-2J5" sceneMemberID="viewController">
@@ -378,7 +379,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-5Q-DE1">
                                 <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-2t-Y8X" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-2t-Y8X" userLabel="Finish Adding Location Button" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
                                 <rect key="frame" x="36" y="722" width="342" height="50"/>
                                 <color key="backgroundColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -404,7 +405,7 @@
                             <constraint firstItem="gkG-2t-Y8X" firstAttribute="leading" secondItem="CS7-7M-PFS" secondAttribute="leading" constant="36" id="nos-Od-2gb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wLb-Gr-0CL"/>
+                    <navigationItem key="navigationItem" title="Add Location" id="wLb-Gr-0CL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFM-st-ykE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

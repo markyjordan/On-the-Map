@@ -13,6 +13,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
 
     // MARK: - Outlets/Properties
     
+    @IBOutlet weak var verticalStackView: UIStackView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: CustomButton!
