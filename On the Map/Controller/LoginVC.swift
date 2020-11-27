@@ -57,16 +57,16 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     func setLoggingIn(_ loggingIn: Bool) {
         if loggingIn {
-            activityIndicator.startAnimating()
+            activityIndicatorView.startAnimating()
         } else {
-            activityIndicator.stopAnimating()
+            activityIndicatorView.stopAnimating()
         }
         
         // enable/disable UI views
         emailTextField.isEnabled = !loggingIn
         passwordTextField.isEnabled = !loggingIn
         loginButton.isEnabled = !loggingIn
-        loginViaWebsiteButton.isEnabled = !loggingIn
+        signupButton.isEnabled = !loggingIn
     }
     
     // MARK: - OAuth
