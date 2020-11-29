@@ -31,6 +31,7 @@
 		E28BFA2325574F62006669BE /* ListTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA2225574F62006669BE /* ListTableViewVC.swift */; };
 		E28BFA332557B055006669BE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA322557B055006669BE /* CustomButton.swift */; };
 		E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA3A2558E70B006669BE /* Utilities.swift */; };
+		E2FBB64E2573852A008D0EE7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */; };
 		FD0F2BBF3EDBF36473B0FC55 /* Pods_On_the_Map_On_the_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD7DEA2A55AA67059BAAD9 /* Pods_On_the_Map_On_the_MapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		E28BFA2225574F62006669BE /* ListTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewVC.swift; sourceTree = "<group>"; };
 		E28BFA322557B055006669BE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E28BFA3A2558E70B006669BE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		FEDFFCF1778CCEFEF0CF3CB0 /* Pods-On the Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map.release.xcconfig"; path = "Target Support Files/Pods-On the Map/Pods-On the Map.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				E28BF9BC254EFBDE006669BE /* LoginVC.swift */,
+				E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */,
 				E21DDBDC25680E7900480F16 /* MapViewVC.swift */,
 				E28BFA2225574F62006669BE /* ListTableViewVC.swift */,
 				E21DDBC12564DFD700480F16 /* AddLocationVC.swift */,
@@ -524,6 +527,7 @@
 				E28BF9F52550DA5C006669BE /* UdacityClient.swift in Sources */,
 				E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */,
 				E21DDBD42567FEC600480F16 /* Alert.swift in Sources */,
+				E2FBB64E2573852A008D0EE7 /* TabBarVC.swift in Sources */,
 				E28BFA05255385E2006669BE /* GradientView.swift in Sources */,
 				E21DDBDD25680E7900480F16 /* MapViewVC.swift in Sources */,
 				E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */,
