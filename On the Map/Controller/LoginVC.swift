@@ -79,7 +79,16 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
         // request additional read permissions
         facebookLoginButton.permissions = ["public_profile", "email"]
         
-        // set button layout constraints and add it to the view
+        // add button to the view and set layout constraints
+        view.addSubview(facebookLoginButton)
+        
+        facebookLoginButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [
+            facebookLoginButton.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>, constant: <#T##CGFloat#>)
+            facebookLoginButton.centerXAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutXAxisAnchor>#>, constant: <#T##CGFloat#>)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
     
     // function to check for an existing facebook access token at load
