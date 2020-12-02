@@ -55,6 +55,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     // MARK: - Helper Methods
     
+    // set login state
     func setLoggingIn(_ loggingIn: Bool) {
         if loggingIn {
             activityIndicatorView.startAnimating()
