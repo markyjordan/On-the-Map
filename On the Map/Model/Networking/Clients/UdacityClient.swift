@@ -28,7 +28,7 @@ class UdacityClient {
         case updateStudentLocation
         case getUserInformation
         
-        var stringValue: String {
+        var urlString: String {
             switch self {
             case .login:
                 return Endpoints.base + "/session"
@@ -47,7 +47,7 @@ class UdacityClient {
         
         // generate a URL from the endpoint's associated string value
         var url: URL {
-            return URL(string: stringValue)!
+            return URL(string: urlString)!
         }
     }
     
