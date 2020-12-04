@@ -16,6 +16,8 @@ class UdacityClient {
         static var lastName = ""
         static var objectId = ""
         static var userId = ""
+        static var accountKey = ""
+        static var sessionId = ""
     }
     
     enum Endpoints {
@@ -56,6 +58,36 @@ class UdacityClient {
         
     }
     
+    class func logout(completionHandler: @escaping () -> Void) {
+        var request = URLRequest(url: Endpoints.login.url)
+        request.httpMethod = "DELETE"
+        
+        var xsrfCookie: HTTPCookie? = nil
+        let sharedCookieStorage = HTTPCookieStorage.shared
+        for cookie in sharedCookieStorage.cookies! {
+            if cookie.name == "XSRF-TOKEN" { xsrfCookie = cookie }
+        }
+        if let xsrfCookie = xsrfCookie {
+            request.setValue(xsrfCookie.value, forHTTPHeaderField: "X-XSRF-TOKEN")
+        }
+        
+        let sharedSession = URLSession.shared
+        
+        let task = sharedSession.dataTask(with: request) { (data, response, error) in
+            if error != nil {
+                print("Logout error occurred.")
+                return
+            }
+            let range = 5..<data!.count
+            let newData = data?.subdata(in: range)
+            print(String(data: newData!, encoding: .utf8)!)
+            
+            Auth.sessionId = ""
+            completionHandler()
+        }
+        task.resume()
+    }
+    
     class func getUserProfile(completionHandler: @escaping (Bool, Error?) -> Void) {
         
     }
@@ -69,10 +101,6 @@ class UdacityClient {
     }
     
     class func updateStudentLocation {
-        
-    }
-    
-    class func logout(completionHandler: @escaping () -> Void {
         
     }
     
