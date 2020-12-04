@@ -33,6 +33,7 @@
 		E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BFA3A2558E70B006669BE /* Utilities.swift */; };
 		E2FBB64E2573852A008D0EE7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */; };
 		E2FBB6592576FA64008D0EE7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */; };
+		E2FBB6612577779E008D0EE7 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */; };
 		FD0F2BBF3EDBF36473B0FC55 /* Pods_On_the_Map_On_the_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD7DEA2A55AA67059BAAD9 /* Pods_On_the_Map_On_the_MapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		E28BFA3A2558E70B006669BE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
 		FEDFFCF1778CCEFEF0CF3CB0 /* Pods-On the Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map.release.xcconfig"; path = "Target Support Files/Pods-On the Map/Pods-On the Map.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 		E28BF9EE254EFD36006669BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2FBB666257777E7008D0EE7 /* Data */,
 				E21DDBD22567F75200480F16 /* Networking */,
 				E267851C255E724600741DAE /* StudentLocation.swift */,
 				E21DDBB3256115FD00480F16 /* Session.swift */,
@@ -284,8 +287,16 @@
 			isa = PBXGroup;
 			children = (
 				E28BF9F42550DA5C006669BE /* UdacityClient.swift */,
+				E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		E2FBB666257777E7008D0EE7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FBB6612577779E008D0EE7 /* NetworkRequestHelper.swift in Sources */,
 				E28BF9FD2550DAA2006669BE /* Constants.swift in Sources */,
 				E28BF9F52550DA5C006669BE /* UdacityClient.swift in Sources */,
 				E21DDBB92563B6A200480F16 /* UserProfile.swift in Sources */,
