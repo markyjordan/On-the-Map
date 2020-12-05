@@ -34,6 +34,7 @@
 		E2FBB64E2573852A008D0EE7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */; };
 		E2FBB6592576FA64008D0EE7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */; };
 		E2FBB6612577779E008D0EE7 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */; };
+		E2FBB672257B6DAC008D0EE7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB671257B6DAC008D0EE7 /* LoginResponse.swift */; };
 		FD0F2BBF3EDBF36473B0FC55 /* Pods_On_the_Map_On_the_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD7DEA2A55AA67059BAAD9 /* Pods_On_the_Map_On_the_MapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		E2FBB64D2573852A008D0EE7 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
+		E2FBB671257B6DAC008D0EE7 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		FEDFFCF1778CCEFEF0CF3CB0 /* Pods-On the Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map.release.xcconfig"; path = "Target Support Files/Pods-On the Map/Pods-On the Map.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,7 +163,6 @@
 		E21DDBD22567F75200480F16 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E28BFA45255D1277006669BE /* Clients */,
 				E28BF9F22550D89A006669BE /* Requests */,
 				E28BF9F32550D8A3006669BE /* Responses */,
 			);
@@ -197,6 +198,7 @@
 				E28BF9B8254EFBDE006669BE /* AppDelegate.swift */,
 				E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */,
 				E21DDBCE2567F52B00480F16 /* App Utilities */,
+				E28BFA45255D1277006669BE /* Networking */,
 				E28BF9EE254EFD36006669BE /* Model */,
 				E28BF9EF254EFD3C006669BE /* View */,
 				E28BF9F0254EFD43006669BE /* Controller */,
@@ -230,7 +232,6 @@
 				E21DDBD22567F75200480F16 /* Networking */,
 				E267851C255E724600741DAE /* StudentLocation.swift */,
 				E21DDBB3256115FD00480F16 /* Session.swift */,
-				E21DDBB82563B6A200480F16 /* UserProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,17 +280,19 @@
 		E28BF9F32550D8A3006669BE /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				E2FBB671257B6DAC008D0EE7 /* LoginResponse.swift */,
+				E21DDBB82563B6A200480F16 /* UserProfile.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		E28BFA45255D1277006669BE /* Clients */ = {
+		E28BFA45255D1277006669BE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E28BF9F42550DA5C006669BE /* UdacityClient.swift */,
+				E2FBB66D257A2458008D0EE7 /* Clients */,
 				E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */,
 			);
-			path = Clients;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		E2FBB666257777E7008D0EE7 /* Data */ = {
@@ -297,6 +300,14 @@
 			children = (
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E2FBB66D257A2458008D0EE7 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				E28BF9F42550DA5C006669BE /* UdacityClient.swift */,
+			);
+			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +568,7 @@
 				E267851D255E724600741DAE /* StudentLocation.swift in Sources */,
 				E21DDBC22564DFD700480F16 /* AddLocationVC.swift in Sources */,
 				E28BF9BB254EFBDE006669BE /* SceneDelegate.swift in Sources */,
+				E2FBB672257B6DAC008D0EE7 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
