@@ -58,6 +58,22 @@ class UdacityClient {
         
     }
     
+    class func getUserProfile(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
+    
+    class func getStudentLocations(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
+    }
+    
+    class func addStudentLocation() {
+        
+    }
+    
+    class func updateStudentLocation() {
+        
+    }
+    
     class func logout(completionHandler: @escaping () -> Void) {
         var request = URLRequest(url: Endpoints.login.url)
         request.httpMethod = "DELETE"
@@ -86,22 +102,6 @@ class UdacityClient {
             completionHandler()
         }
         task.resume()
-    }
-    
-    class func getUserProfile(completionHandler: @escaping (Bool, Error?) -> Void) {
-        
-    }
-    
-    class func getStudentLocations(completionHandler: @escaping (Bool, Error?) -> Void) {
-        
-    }
-    
-    class func addStudentLocation {
-        
-    }
-    
-    class func updateStudentLocation {
-        
     }
     
 }
