@@ -25,7 +25,7 @@ class UdacityClient {
         
         case login
         case signUp
-        case getStudentLocation
+        case getStudentLocations
         case addStudentLocation
         case updateStudentLocation
         case getUserInformation
@@ -36,7 +36,7 @@ class UdacityClient {
                 return Endpoints.base + "/session"
             case .signUp:
                 return Constants.udacityURLSignUp
-            case .getStudentLocation:
+            case .getStudentLocations:
                 return Endpoints.base + "/StudentLocation?limit=100"
             case .addStudentLocation:
                 return Endpoints.base + "/StudentLocation"
@@ -62,8 +62,14 @@ class UdacityClient {
         
     }
     
-    class func getStudentLocations(completionHandler: @escaping (Bool, Error?) -> Void) {
-        
+    class func getStudentLocations(completionHandler: @escaping ([StudentLocation], Error?) -> Void) {
+        NetworkRequestHelper.taskForGETRequest(url: Endpoints.getStudentLocations.url, responseType: StudentLocationResults.self) { (response, error) in
+            if let response = response {
+                completionHandler(response.results, nil)
+            } else {
+                completionHandler([], error)
+            }
+        }
     }
     
     class func addStudentLocation() {
