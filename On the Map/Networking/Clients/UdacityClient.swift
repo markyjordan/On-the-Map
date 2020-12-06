@@ -63,7 +63,7 @@ class UdacityClient {
     }
     
     class func getStudentLocations(completionHandler: @escaping ([StudentLocation], Error?) -> Void) {
-        NetworkRequestHelper.taskForGETRequest(url: Endpoints.getStudentLocations.url, responseType: StudentLocationResults.self) { (response, error) in
+        NetworkRequestHelper.taskForGETRequest(url: Endpoints.getStudentLocations.url, responseType: GetStudentLocationResults.self) { (response, error) in
             if let response = response {
                 completionHandler(response.results, nil)
             } else {
@@ -73,7 +73,7 @@ class UdacityClient {
     }
     
     class func addStudentLocation() {
-        
+        NetworkRequestHelper.taskForPOSTRequest(url: <#T##URL#>, body: <#T##Encodable#>, responseType: <#T##Decodable.Protocol#>, completionHandler: <#T##(Decodable?, Error?) -> Void#>)
     }
     
     class func updateStudentLocation() {

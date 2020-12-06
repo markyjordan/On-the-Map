@@ -35,7 +35,8 @@
 		E2FBB6592576FA64008D0EE7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */; };
 		E2FBB6612577779E008D0EE7 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */; };
 		E2FBB672257B6DAC008D0EE7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB671257B6DAC008D0EE7 /* LoginResponse.swift */; };
-		E2FBB67A257B6F8F008D0EE7 /* StudentLocationResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB679257B6F8F008D0EE7 /* StudentLocationResults.swift */; };
+		E2FBB67A257B6F8F008D0EE7 /* GetStudentLocationResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB679257B6F8F008D0EE7 /* GetStudentLocationResults.swift */; };
+		E2FBB682257CC5E5008D0EE7 /* PostStudentLocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB681257CC5E5008D0EE7 /* PostStudentLocationRequest.swift */; };
 		FD0F2BBF3EDBF36473B0FC55 /* Pods_On_the_Map_On_the_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD7DEA2A55AA67059BAAD9 /* Pods_On_the_Map_On_the_MapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +98,8 @@
 		E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
 		E2FBB671257B6DAC008D0EE7 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		E2FBB679257B6F8F008D0EE7 /* StudentLocationResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationResults.swift; sourceTree = "<group>"; };
+		E2FBB679257B6F8F008D0EE7 /* GetStudentLocationResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStudentLocationResults.swift; sourceTree = "<group>"; };
+		E2FBB681257CC5E5008D0EE7 /* PostStudentLocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStudentLocationRequest.swift; sourceTree = "<group>"; };
 		FEDFFCF1778CCEFEF0CF3CB0 /* Pods-On the Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On the Map.release.xcconfig"; path = "Target Support Files/Pods-On the Map/Pods-On the Map.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FBB6582576FA64008D0EE7 /* LoginRequest.swift */,
+				E2FBB681257CC5E5008D0EE7 /* PostStudentLocationRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -283,7 +286,7 @@
 			children = (
 				E2FBB671257B6DAC008D0EE7 /* LoginResponse.swift */,
 				E21DDBB82563B6A200480F16 /* UserProfile.swift */,
-				E2FBB679257B6F8F008D0EE7 /* StudentLocationResults.swift */,
+				E2FBB679257B6F8F008D0EE7 /* GetStudentLocationResults.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -560,12 +563,13 @@
 				E28BFA05255385E2006669BE /* GradientView.swift in Sources */,
 				E21DDBDD25680E7900480F16 /* MapViewVC.swift in Sources */,
 				E28BFA3B2558E70B006669BE /* Utilities.swift in Sources */,
-				E2FBB67A257B6F8F008D0EE7 /* StudentLocationResults.swift in Sources */,
+				E2FBB67A257B6F8F008D0EE7 /* GetStudentLocationResults.swift in Sources */,
 				E28BFA0F2557415B006669BE /* Colors.swift in Sources */,
 				E28BFA332557B055006669BE /* CustomButton.swift in Sources */,
 				E28BF9BD254EFBDE006669BE /* LoginVC.swift in Sources */,
 				E21DDBC72564E2FA00480F16 /* LocationPreviewVC.swift in Sources */,
 				E21DDBB4256115FD00480F16 /* Session.swift in Sources */,
+				E2FBB682257CC5E5008D0EE7 /* PostStudentLocationRequest.swift in Sources */,
 				E2FBB6592576FA64008D0EE7 /* LoginRequest.swift in Sources */,
 				E28BFA2325574F62006669BE /* ListTableViewVC.swift in Sources */,
 				E28BF9B9254EFBDE006669BE /* AppDelegate.swift in Sources */,
