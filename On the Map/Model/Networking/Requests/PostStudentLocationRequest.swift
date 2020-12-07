@@ -16,4 +16,3 @@ struct PostStudentLocationRequest: Codable {
     let latitude: Float
     let longitude: Float
 }
-
