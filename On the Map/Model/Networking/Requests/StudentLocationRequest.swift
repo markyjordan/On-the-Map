@@ -1,5 +1,5 @@
 //
-//  PostStudentLocationRequest.swift
+//  StudentLocationRequest.swift
 //  On the Map
 //
 //  Created by Marky Jordan on 12/5/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PostStudentLocationRequest: Codable {
+struct StudentLocationRequest: Codable {
     let uniqueKey: String
     let firstName: String
     let lastName: String
