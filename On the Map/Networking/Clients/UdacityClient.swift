@@ -15,7 +15,6 @@ class UdacityClient {
         static var firstName = ""
         static var lastName = ""
         static var objectId = ""
-        static var userId = ""
         static var accountKey = ""
         static var sessionId = ""
     }
@@ -43,7 +42,7 @@ class UdacityClient {
             case .updateStudentLocation:
                 return Endpoints.base + "/StudentLocation/" + Auth.objectId
             case .getUserInformation:
-                return Endpoints.base + "/users/" + Auth.userId
+                return Endpoints.base + "/users/" + Auth.accountKey
             }
         }
         
