@@ -54,7 +54,17 @@ class UdacityClient {
     
     
     class func login(email: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
+        let requestBody = LoginRequest(udacity: LoginCredentials(username: "\(email)", password: "\(password)"))
         
+        NetworkRequestHelper.taskForPOSTRequest(url: Endpoints.login.url, body: requestBody, responseType: LoginResponse.self) { (response, error) in
+            if let response = response {
+                Auth.accountKey = response.account.key
+                Auth.sessionId = response.session.id
+                completionHandler(true, nil)
+            } else {
+                completionHandler(false, nil)
+            }
+        }
     }
     
     class func getUserProfile(completionHandler: @escaping (Bool, Error?) -> Void) {
@@ -108,5 +118,4 @@ class UdacityClient {
         }
         task.resume()
     }
-    
 }
