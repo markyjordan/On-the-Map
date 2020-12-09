@@ -89,8 +89,17 @@ class UdacityClient {
         }
     }
     
-    class func addStudentLocation() {
-        NetworkRequestHelper.taskForPOSTRequest(url: <#T##URL#>, body: <#T##Encodable#>, responseType: <#T##Decodable.Protocol#>, completionHandler: <#T##(Decodable?, Error?) -> Void#>)
+    class func addStudentLocation(mapData: StudentLocation, completionHandler: @escaping (Bool, Error?) -> Void) {
+        let requestBody = StudentLocationRequest(uniqueKey: <#T##String#>, firstName: <#T##String#>, lastName: <#T##String#>, mapString: <#T##String#>, mediaURL: <#T##String#>, latitude: <#T##Float#>, longitude: <#T##Float#>)
+        
+        NetworkRequestHelper.taskForPOSTRequest(url: Endpoints.addStudentLocation.url, body: requestBody, responseType: PostStudentLocationResponse.self) { (response, error) in
+            if let response = response {
+                Auth.objectId = response.objectId
+                completionHandler(true, nil)
+            } else {
+                completionHandler(false, nil)
+            }
+        }
     }
     
     class func updateStudentLocation() {
