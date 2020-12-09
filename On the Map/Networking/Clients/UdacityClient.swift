@@ -68,7 +68,15 @@ class UdacityClient {
     }
     
     class func getUserProfile(completionHandler: @escaping (Bool, Error?) -> Void) {
-        
+        NetworkRequestHelper.taskForGETRequest(url: Endpoints.getUserInformation.url, responseType: UserProfile.self) { (response, error) in
+            if let response = response {
+                Auth.firstName = response.firstName
+                Auth.lastName = response.lastName
+                completionHandler(true, nil)
+            } else {
+                completionHandler(false, nil)
+            }
+        }
     }
     
     class func getStudentLocations(completionHandler: @escaping ([StudentLocation], Error?) -> Void) {
