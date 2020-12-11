@@ -52,6 +52,7 @@ class UdacityClient {
         }
     }
     
+    // MARK: - Network Request Methods
     
     class func login(email: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
         let requestBody = LoginRequest(udacity: LoginCredentials(username: "\(email)", password: "\(password)"))
@@ -60,6 +61,7 @@ class UdacityClient {
             if let response = response {
                 Auth.accountKey = response.account.key
                 Auth.sessionId = response.session.id
+                
                 completionHandler(true, nil)
             } else {
                 completionHandler(false, nil)
@@ -74,7 +76,7 @@ class UdacityClient {
                 Auth.lastName = response.lastName
                 completionHandler(true, nil)
             } else {
-                completionHandler(false, nil)
+                completionHandler(false, error)
             }
         }
     }
@@ -102,8 +104,16 @@ class UdacityClient {
         }
     }
     
-    class func updateStudentLocation() {
+    class func updateStudentLocation(mapData: StudentLocation, completionHandler: @escaping (Bool, Error?) -> Void) {
+        let requestBody = StudentLocationRequest(uniqueKey: <#T##String#>, firstName: <#T##String#>, lastName: <#T##String#>, mapString: <#T##String#>, mediaURL: <#T##String#>, latitude: <#T##Float#>, longitude: <#T##Float#>)
         
+        NetworkRequestHelper.taskForPUTRequest(url: Endpoints.updateStudentLocation.url, body: requestBody, responseType: UpdateStudentLocationResponse.self) { (response, error) in
+            if let response = response {
+                completionHandler(true, nil)
+            } else {
+                completionHandler(false, error)
+            }
+        }
     }
     
     class func logout(completionHandler: @escaping () -> Void) {
