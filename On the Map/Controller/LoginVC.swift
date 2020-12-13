@@ -22,6 +22,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     var facebookLoginButton = FBLoginButton()
     
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -43,6 +44,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
         Utilities.lockOrientation(.all)
     }
     
+    
     // MARK: - Navigation
     
     // method to call when user taps login button
@@ -53,22 +55,41 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
         
     }
     
+    
     // MARK: - Helper Methods
     
     // set login state
     func setLoggingIn(_ loggingIn: Bool) {
         if loggingIn {
-            activityIndicatorView.startAnimating()
+            DispatchQueue.main.async {
+                self.activityIndicatorView.startAnimating()
+            }
         } else {
-            activityIndicatorView.stopAnimating()
+            DispatchQueue.main.async {
+                self.activityIndicatorView.stopAnimating()
+            }
         }
         
         // enable/disable UI views
-        emailTextField.isEnabled = !loggingIn
-        passwordTextField.isEnabled = !loggingIn
-        loginButton.isEnabled = !loggingIn
-        signupButton.isEnabled = !loggingIn
+        DispatchQueue.main.async {
+            self.emailTextField.isEnabled = !loggingIn
+            self.passwordTextField.isEnabled = !loggingIn
+            self.loginButton.isEnabled = !loggingIn
+            self.signupButton.isEnabled = !loggingIn
+        }
     }
+    
+    
+    // MARK: - UITextField Delegate Methods
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        <#code#>
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        <#code#>
+    }
+    
     
     // MARK: - OAuth
     

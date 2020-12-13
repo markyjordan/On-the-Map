@@ -92,11 +92,11 @@ class UdacityClient {
     }
     
     class func addStudentLocation(mapData: StudentLocation, completionHandler: @escaping (Bool, Error?) -> Void) {
-        let requestBody = StudentLocationRequest(uniqueKey: <#T##String#>, firstName: <#T##String#>, lastName: <#T##String#>, mapString: <#T##String#>, mediaURL: <#T##String#>, latitude: <#T##Float#>, longitude: <#T##Float#>)
+        let requestBody = StudentLocationRequest(uniqueKey: mapData.uniqueKey, firstName: mapData.firstName, lastName: mapData.lastName, mapString: mapData.mapString, mediaURL: mapData.mediaURL, latitude: mapData.latitude, longitude: mapData.longitude)
         
         NetworkRequestHelper.taskForPOSTRequest(url: Endpoints.addStudentLocation.url, body: requestBody, responseType: PostStudentLocationResponse.self) { (response, error) in
-            if let response = response {
-                Auth.objectId = response.objectId
+            if let response = response, response.createdAt != nil {
+                Auth.objectId = response.objectId ?? ""
                 completionHandler(true, nil)
             } else {
                 completionHandler(false, nil)
@@ -105,10 +105,10 @@ class UdacityClient {
     }
     
     class func updateStudentLocation(mapData: StudentLocation, completionHandler: @escaping (Bool, Error?) -> Void) {
-        let requestBody = StudentLocationRequest(uniqueKey: <#T##String#>, firstName: <#T##String#>, lastName: <#T##String#>, mapString: <#T##String#>, mediaURL: <#T##String#>, latitude: <#T##Float#>, longitude: <#T##Float#>)
+        let requestBody = StudentLocationRequest(uniqueKey: mapData.uniqueKey, firstName: mapData.firstName, lastName: mapData.lastName, mapString: mapData.mapString, mediaURL: mapData.mediaURL, latitude: mapData.latitude, longitude: mapData.longitude)
         
         NetworkRequestHelper.taskForPUTRequest(url: Endpoints.updateStudentLocation.url, body: requestBody, responseType: UpdateStudentLocationResponse.self) { (response, error) in
-            if let response = response {
+            if let response = response, response.updatedAt != nil {
                 completionHandler(true, nil)
             } else {
                 completionHandler(false, error)
