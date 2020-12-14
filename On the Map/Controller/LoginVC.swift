@@ -47,15 +47,12 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     // MARK: - Navigation
     
-    // method to call when user taps login button
-
     @IBAction func loginButtonTapped(_ sender: Any) {
         setLoggingIn(true)
         
-        
+        UdacityClient.login(email: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completionHandler: handleLoginResponse(success:error:))
     }
     
-    // method to call when user taps signup button
     @IBAction func signUpButtonTapped(_ sender: Any) {
         
         

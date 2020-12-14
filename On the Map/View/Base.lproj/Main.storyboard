@@ -51,7 +51,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="loginButtonTappedd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHL-IX-En2"/>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBl-2q-7ln"/>
                                         </connections>
                                     </button>
                                 </subviews>
