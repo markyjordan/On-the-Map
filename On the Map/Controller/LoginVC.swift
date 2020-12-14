@@ -48,6 +48,10 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     // MARK: - Navigation
     
     // method to call when user taps login button
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        setLoggingIn(true)
+        
+    }
     
     // method to call when user taps signup button
     @IBAction func signUpButtonTapped(_ sender: Any) {
@@ -76,6 +80,18 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
             self.passwordTextField.isEnabled = !loggingIn
             self.loginButton.isEnabled = !loggingIn
             self.signupButton.isEnabled = !loggingIn
+        }
+    }
+    
+    // MARK: - Network Request Login Completion Handler
+    
+    func handleLoginResponse(success: Bool, error: Error?) {
+        setLoggingIn(false)
+        
+        if success {
+            performSegue(withIdentifier: "loginTapped", sender: nil)
+        } else {
+            // show an alert vc
         }
     }
     
