@@ -35,7 +35,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-cj-wxe" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-cj-wxe">
                                         <rect key="frame" x="0.0" y="120" width="342" height="50"/>
                                         <color key="backgroundColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -418,9 +418,6 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="2GZ-cj-wxe">
-            <size key="intrinsicContentSize" width="58" height="34"/>
-        </designable>
         <designable name="gkG-2t-Y8X">
             <size key="intrinsicContentSize" width="48" height="30"/>
         </designable>

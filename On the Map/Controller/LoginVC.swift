@@ -9,14 +9,14 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
+class LoginVC: UIViewController, UITextFieldDelegate {
 
     // MARK: - Outlets/Properties
     
     @IBOutlet weak var verticalStackView: UIStackView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: CustomButton!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
@@ -27,7 +27,13 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // setup views
+        setupLoginButton()
+        setupFacebookLoginButton()
+        
+        // setup OAuth
+        setupFacebookOAuth()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +68,22 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     // MARK: - Helper Methods
     
+    // login network request completionHandler
+    func handleLoginResponse(success: Bool, error: Error?) {
+        setLoggingIn(false)
+        
+        if success {
+            performSegue(withIdentifier: "loginTapped", sender: nil)
+        } else {
+            // show an alert vc
+        }
+    }
+    
+    // set login button properties
+    private func setupLoginButton() {
+        loginButton.layer.cornerRadius = Constants.buttonCornerRadius
+    }
+    
     // set login state
     func setLoggingIn(_ loggingIn: Bool) {
         if loggingIn {
@@ -83,19 +105,6 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
         }
     }
     
-    // MARK: - Network Request Login Completion Handler
-    
-    func handleLoginResponse(success: Bool, error: Error?) {
-        setLoggingIn(false)
-        
-        if success {
-            performSegue(withIdentifier: "loginTapped", sender: nil)
-        } else {
-            // show an alert vc
-        }
-    }
-    
-    
     // MARK: - UITextField Delegate Methods
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -114,8 +123,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     // setup facebook login button
     private func setupFacebookLoginButton() {
         
-        // request additional read permissions
-        facebookLoginButton.permissions = ["public_profile", "email"]
+        // set properties
         
         // add button to the view and set layout constraints
         view.addSubview(facebookLoginButton)
@@ -129,10 +137,15 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
         NSLayoutConstraint.activate(constraints)
     }
     
-    // function to check for an existing facebook access token at load
-//    if let token = AccessToken.current,!token.isExpired {
-//            // User is logged in, do work such as go to next view controller.
-//    }
-    
+    private func setupFacebookOAuth() {
+        // function to check for an existing facebook access token at view load
+        if let token = AccessToken.current,!token.isExpired {
+            // user is loggin in
+            
+        }
+        
+        // request additional read permissions for facebook OAuth
+        facebookLoginButton.permissions = ["public_profile", "email"]
+    }
 }
 
