@@ -54,8 +54,9 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
+        setLoggingIn(true)
         
-        
+        UIApplication.shared.open(UdacityClient.Endpoints.signUp.url, options: [:], completionHandler: nil)
     }
     
     
