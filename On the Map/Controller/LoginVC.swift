@@ -48,8 +48,10 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     // MARK: - Navigation
     
     // method to call when user taps login button
+
     @IBAction func loginButtonTapped(_ sender: Any) {
         setLoggingIn(true)
+        
         
     }
     
