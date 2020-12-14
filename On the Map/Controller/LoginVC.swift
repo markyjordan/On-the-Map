@@ -32,7 +32,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         setupLoginButton()
         setupFacebookLoginButton()
         
-        // setup OAuth
+        // configure Facebook OAuth
         setupFacebookOAuth()
     }
     
@@ -124,6 +124,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     private func setupFacebookLoginButton() {
         
         // set properties
+        let buttonTitle = NSAttributedString(string: "Sign In with Facebook")
+        facebookLoginButton.setAttributedTitle(buttonTitle, for: .normal)
         
         // add button to the view and set layout constraints
         view.addSubview(facebookLoginButton)
