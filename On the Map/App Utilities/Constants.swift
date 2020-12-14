@@ -7,8 +7,6 @@
 
 class Constants {
     
-    static let udacityUserAPIKey = ""
-    static let udacitySignUpURL = "https://auth.udacity.com/sign-up"
     
 }
 

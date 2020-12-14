@@ -58,7 +58,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
         
         UIApplication.shared.open(UdacityClient.Endpoints.signUp.url, options: [:], completionHandler: nil)
     }
-    
+
     
     // MARK: - Helper Methods
     
