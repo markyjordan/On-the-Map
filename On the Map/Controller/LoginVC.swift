@@ -136,10 +136,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         facebookLoginButton.translatesAutoresizingMaskIntoConstraints = false
         
         let constraints = [
-            facebookLoginButton.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>, constant: <#T##CGFloat#>)
-            facebookLoginButton.centerXAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutXAxisAnchor>#>, constant: <#T##CGFloat#>)
-            facebookLoginButton.leadingAnchor.constraint(equalTo: , constant: )
-            facebookLoginButton.trailingAnchor.constraint(equalTo: , constant: )
+            facebookLoginButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 75),
+            facebookLoginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            facebookLoginButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 36),
+            facebookLoginButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -36)
         ]
         NSLayoutConstraint.activate(constraints)
     }
