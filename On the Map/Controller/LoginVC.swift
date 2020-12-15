@@ -34,6 +34,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         // configure Facebook OAuth
         setupFacebookOAuth()
+        
+        // hide the keyboard when users taps anywhere outside a textfield
+        self.dismissKeyboardOnTap()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -135,6 +138,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let constraints = [
             facebookLoginButton.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>, constant: <#T##CGFloat#>)
             facebookLoginButton.centerXAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutXAxisAnchor>#>, constant: <#T##CGFloat#>)
+            facebookLoginButton.leadingAnchor.constraint(equalTo: , constant: )
+            facebookLoginButton.trailingAnchor.constraint(equalTo: , constant: )
         ]
         NSLayoutConstraint.activate(constraints)
     }

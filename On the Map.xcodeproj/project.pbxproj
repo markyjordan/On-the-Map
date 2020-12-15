@@ -168,7 +168,6 @@
 				E28BF9FC2550DAA2006669BE /* Constants.swift */,
 				E28BFA3A2558E70B006669BE /* Utilities.swift */,
 				E21DDBD32567FEC600480F16 /* Alert.swift */,
-				E27A1791258856330062D26B /* UIViewController+Extensions.swift */,
 			);
 			path = "App Utilities";
 			sourceTree = "<group>";
@@ -268,6 +267,7 @@
 				E28BFA2225574F62006669BE /* ListTableViewVC.swift */,
 				E21DDBC12564DFD700480F16 /* AddLocationVC.swift */,
 				E21DDBC62564E2FA00480F16 /* LocationPreviewVC.swift */,
+				E27A1791258856330062D26B /* UIViewController+Extensions.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
