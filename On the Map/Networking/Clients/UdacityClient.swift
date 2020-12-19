@@ -9,8 +9,6 @@ import Foundation
 
 class UdacityClient {
     
-    static let apiKey = Constants.udacityUserAPIKey
-    
     struct Auth {
         static var firstName = ""
         static var lastName = ""
@@ -34,7 +32,7 @@ class UdacityClient {
             case .login:
                 return Endpoints.base + "/session"
             case .signUp:
-                return Constants.udacityURLSignUp
+                return "https://auth.udacity.com/sign-up"
             case .getStudentLocations:
                 return Endpoints.base + "/StudentLocation?limit=100"
             case .addStudentLocation:
