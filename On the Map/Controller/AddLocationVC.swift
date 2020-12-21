@@ -19,6 +19,8 @@ class AddLocationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // hide the keyboard when users taps anywhere outside a textfield
+        self.dismissKeyboardOnTap()
     }
     
     override func viewWillAppear(_ animated: Bool) {
