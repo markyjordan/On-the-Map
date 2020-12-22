@@ -12,7 +12,8 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
 
     // MARK: - Outlets/Properties
     
-    var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
+    
     var locations = [String: Any]()
     var annotations = [MKPointAnnotation]()
     
@@ -45,6 +46,5 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         
         return pinView
     }
-
 
 }
