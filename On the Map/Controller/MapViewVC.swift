@@ -23,7 +23,15 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+    }
+    
+    // MARK: - User Interface
+    @IBAction func refreshMapData(_ sender: Any) {
+        
+    }
+    
+    func getMapData() {
+        
     }
     
     

@@ -180,14 +180,21 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-TI-m6n">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </mapView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-X6-4R5">
+                                <rect key="frame" x="197" y="397" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3hj-fM-Abq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sTg-TI-m6n" firstAttribute="bottom" secondItem="3hj-fM-Abq" secondAttribute="bottom" id="7ZI-Km-gls"/>
+                            <constraint firstItem="3hj-fM-Abq" firstAttribute="trailing" secondItem="DTK-X6-4R5" secondAttribute="trailing" constant="197" id="BWy-qW-ach"/>
                             <constraint firstItem="sTg-TI-m6n" firstAttribute="top" secondItem="3hj-fM-Abq" secondAttribute="top" id="Um9-KY-p1R"/>
+                            <constraint firstItem="DTK-X6-4R5" firstAttribute="leading" secondItem="3hj-fM-Abq" secondAttribute="leading" constant="197" id="Yri-CF-b3k"/>
                             <constraint firstItem="sTg-TI-m6n" firstAttribute="trailing" secondItem="3hj-fM-Abq" secondAttribute="trailing" id="hhx-Dv-CPj"/>
+                            <constraint firstItem="3hj-fM-Abq" firstAttribute="bottom" secondItem="DTK-X6-4R5" secondAttribute="bottom" constant="342" id="jZK-lu-aqc"/>
                             <constraint firstItem="sTg-TI-m6n" firstAttribute="leading" secondItem="3hj-fM-Abq" secondAttribute="leading" id="qkg-Yi-Ibp"/>
+                            <constraint firstItem="DTK-X6-4R5" firstAttribute="top" secondItem="3hj-fM-Abq" secondAttribute="top" constant="341" id="uqE-ZK-h8M"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="On the Map" id="V1b-mc-Agu">
@@ -198,7 +205,11 @@
                                     <segue destination="8Yr-vW-4Tx" kind="presentation" id="nII-RU-T1l"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="icon_refresh" id="ptW-f1-Kpj"/>
+                            <barButtonItem title="Item" image="icon_refresh" id="ptW-f1-Kpj">
+                                <connections>
+                                    <action selector="refreshMapData:" destination="C5f-so-C5Z" id="M9J-Uh-AvW"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
