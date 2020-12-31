@@ -9,15 +9,20 @@ import UIKit
 
 struct Alert {
     
+    // MARK: - Alert Views
+    
+    // basic alert with single "OK" dismiss action
     private static func showBasicAlert(on vc: UIViewController, title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         vc.present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - Alert Styles
+    
     // failed network connection
     static func showNetworkError(on vc: UIViewController) {
-        showBasicAlert(on: vc, title: <#T##String#>, message: <#T##String#>)
+        showBasicAlert(on: vc, title: "Network Error", message: "Unable to connect to the interwebz.")
     }
     
     // incorrect login credentials (email and password)
