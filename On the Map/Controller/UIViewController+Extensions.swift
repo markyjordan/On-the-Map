@@ -22,7 +22,7 @@ extension UIViewController {
     }
     
     // open links in Safari
-    func openURL(_ url: String?) {
+    func openURL(_ url: String) {
         guard let url = URL(string: url), UIApplication.shared.canOpenURL(url) else {
             Alert.showInvalidURL(on: self)
             return
