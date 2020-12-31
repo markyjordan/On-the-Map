@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    // this method hides the keyboard when users taps anywhere outside a textfield
+    // hide the keyboard when users taps anywhere outside a textfield
     func dismissKeyboardOnTap() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGesture.cancelsTouchesInView = false
@@ -19,5 +19,14 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
+    }
+    
+    // open links in Safari
+    func openURL(_ url: String?) {
+        guard let url = URL(string: url), UIApplication.shared.canOpenURL(url) else {
+            Alert.showInvalidURL(on: self)
+            return
+        }
+        UIApplication.shared.open(url, options: [:])
     }
 }

@@ -16,8 +16,9 @@ struct Alert {
     }
     
     // failed network connection
-    
-    // invalid link
+    static func showNetworkError(on vc: UIViewController) {
+        showBasicAlert(on: vc, title: <#T##String#>, message: <#T##String#>)
+    }
     
     // incorrect login credentials (email and password)
     static func showInvalidLogin(on vc: UIViewController) {
@@ -25,7 +26,9 @@ struct Alert {
     }
     
     // invalid location url
-
+    static func showInvalidURL(on vc: UIViewController) {
+        showBasicAlert(on: vc, title: "Invalid Link", message: "Cannot open URL.")
+    }
     
     // failed to forward location geocode
     static func showLocationNotFound(on vc: UIViewController, message: Error) {

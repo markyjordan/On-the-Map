@@ -13,25 +13,69 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     // MARK: - Outlets/Properties
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
-    var locations = [String: Any]()
+    var locations = [StudentLocation]()
     var annotations = [MKPointAnnotation]()
     
     
     // MARK: - Life Cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        getMapData()
     }
     
     // MARK: - User Interface
-    @IBAction func refreshMapData(_ sender: Any) {
+    
+    @IBAction func logout(_ sender: Any) {
+        self.activityIndicatorView.startAnimating()
         
+        UdacityClient.logout {
+            DispatchQueue.main.async {
+                self.dismiss(animated: true, completion: nil)
+                self.activityIndicatorView.stopAnimating()
+            }
+        }
+    }
+    
+    @IBAction func refreshMapData(_ sender: Any) {
+        getMapData()
     }
     
     func getMapData() {
+        self.activityIndicatorView.startAnimating()
+        self.mapView.removeAnnotations(self.annotations)
+        self.annotations.removeAll()
         
+        UdacityClient.getStudentLocations { (locations, error) in
+            self.locations = locations
+
+            
+            for student in self.locations {
+    
+                let lat = CLLocationDegrees(student.latitude as! Double)
+                let long = CLLocationDegrees(student.longitude as! Double)
+                let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                let first = student.firstName
+                let last = student.lastName
+                let mediaURL = student.mediaURL
+                
+                // create the annotation and set the coordinate, title and subtitle properties
+                // finally, add it to the global array of map annotations
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = coordinate
+                annotation.title = "\(first) \(last)"
+                annotation.subtitle = mediaURL
+                self.annotations.append(annotation)
+            }
+            
+            DispatchQueue.main.async {
+                self.mapView.addAnnotations(self.annotations)
+                self.activityIndicatorView.stopAnimating()
+            }
+        }
     }
     
     
@@ -53,6 +97,14 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         }
         
         return pinView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            if let toOpen = view.annotation?.subtitle! {
+                openURL(toOpen ?? "")
+            }
+        }
     }
 
 }
