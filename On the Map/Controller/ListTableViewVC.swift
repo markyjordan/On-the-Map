@@ -11,6 +11,9 @@ class ListTableViewVC: UIViewController {
 
     // MARK: - Outlets/Properties
     
+    @IBOutlet weak var studentListTableView: UITableView!
+    
+    var students = [StudentLocation]()
     
     
     // MARK: - Life Cycle

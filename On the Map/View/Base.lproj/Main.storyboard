@@ -387,6 +387,9 @@
                             <barButtonItem image="icon_refresh" id="AO2-l0-Tmk"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="studentListTableView" destination="nTG-Ce-jAT" id="NVN-xe-4x6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJp-wq-2dH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
