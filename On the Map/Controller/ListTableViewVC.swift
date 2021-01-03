@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListTableViewVC: UIViewController {
+class ListTableViewVC: UITableViewController {
 
     // MARK: - Outlets/Properties
     
@@ -26,5 +26,24 @@ class ListTableViewVC: UIViewController {
     
     // MARK: - Table View Delegate and Data Source Methods
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.students.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StudentTableViewCell", for: indexPath)
+        let student = students[indexPath.row]
+        cell.textLabel?.text = "\(student.firstName)" + " " + "\(student.lastName)"
+        cell.detailTextLabel?.text = "\(student.mediaURL ?? "")"
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let student = students[indexPath.row]
+        openURL(student.mediaURL ?? "")
+    }
 }
