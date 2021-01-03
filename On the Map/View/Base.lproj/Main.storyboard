@@ -377,14 +377,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="On the Map" id="E50-kl-rS8">
-                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="ee9-XU-B9h"/>
+                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="ee9-XU-B9h">
+                            <connections>
+                                <action selector="logout:" destination="ROw-Dr-97c" id="IwQ-XO-Tge"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem image="icon_addpin" id="FJQ-wL-hnb">
+                            <barButtonItem title="addLocation" image="icon_addpin" id="FJQ-wL-hnb">
                                 <connections>
+                                    <action selector="addLocation:" destination="ROw-Dr-97c" id="1pY-48-i8q"/>
                                     <segue destination="8Yr-vW-4Tx" kind="presentation" id="yPb-qk-WHP"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="icon_refresh" id="AO2-l0-Tmk"/>
+                            <barButtonItem title="refreshListData" image="icon_refresh" id="AO2-l0-Tmk">
+                                <connections>
+                                    <action selector="refreshTableViewData:" destination="ROw-Dr-97c" id="Jba-fz-mcT"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -448,7 +457,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="yPb-qk-WHP"/>
+        <segue reference="nII-RU-T1l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>

@@ -24,6 +24,41 @@ class ListTableViewVC: UITableViewController {
     }
     
     
+    // MARK: - User Interface
+    
+    @IBAction func logout(_ sender: Any) {
+        // include activity indicator animation
+        
+        UdacityClient.logout {
+            DispatchQueue.main.async {
+                self.dismiss(animated: true, completion: nil)
+                
+                // hide activity indicator animation
+            }
+        }
+        
+    }
+    
+    @IBAction func refreshListData(_ sender: Any) {
+        // include activity indicator animation
+        
+        UdacityClient.getStudentLocations { (students, error) in
+            self.students = students
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                
+                // hide activity indicator animation
+            }
+        }
+        
+    }
+    
+    @IBAction func addLocation(_ sender: Any) {
+        
+        
+    }
+    
     // MARK: - Table View Delegate and Data Source Methods
     
     override func numberOfSections(in tableView: UITableView) -> Int {
