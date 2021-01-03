@@ -27,6 +27,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         getMapData()
     }
     
+    
     // MARK: - User Interface
     
     @IBAction func logout(_ sender: Any) {
@@ -43,6 +44,14 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     @IBAction func refreshMapData(_ sender: Any) {
         getMapData()
     }
+    
+    
+    @IBAction func addLocation(_ sender: Any) {
+        
+    }
+    
+    
+    // MARK: - Helpers
     
     func getMapData() {
         self.activityIndicatorView.startAnimating()

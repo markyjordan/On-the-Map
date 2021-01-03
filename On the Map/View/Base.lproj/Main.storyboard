@@ -206,6 +206,7 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Item" image="icon_addpin" id="Kez-Kf-VhQ">
                                 <connections>
+                                    <action selector="addLocation:" destination="C5f-so-C5Z" id="2Yt-re-kkE"/>
                                     <segue destination="8Yr-vW-4Tx" kind="presentation" id="nII-RU-T1l"/>
                                 </connections>
                             </barButtonItem>
