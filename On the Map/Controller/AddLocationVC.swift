@@ -36,4 +36,18 @@ class AddLocationVC: UIViewController {
     }
     
     
+    // MARK: - Navigation
+    
+    // dismiss the 'add location' view
+    @IBAction func cancelAddLocation(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // find the user input location
+    @IBAction func findLocation(_ sender: Any) {
+        
+    }
+    
+
+    
 }

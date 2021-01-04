@@ -284,6 +284,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="findLocation:" destination="AFO-wg-QHI" eventType="touchUpInside" id="tVg-g7-Pzf"/>
                                             <segue destination="UEi-bq-2J5" kind="show" id="g51-R7-Jwq"/>
                                         </connections>
                                     </button>
@@ -311,7 +312,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Location" id="2yu-Kp-Mn4">
                         <barButtonItem key="backBarButtonItem" id="bha-Ei-Xd8"/>
-                        <barButtonItem key="leftBarButtonItem" title="CANCEL" id="Pgc-1E-NWi"/>
+                        <barButtonItem key="leftBarButtonItem" title="CANCEL" id="Pgc-1E-NWi">
+                            <connections>
+                                <action selector="cancelAddLocation:" destination="AFO-wg-QHI" id="E8k-oa-I6d"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicatorView" destination="Id8-Ga-U7t" id="6CV-Jf-pZl"/>
