@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AddLocationVC: UIViewController {
+class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - Outlets/Properties
     
@@ -48,6 +48,19 @@ class AddLocationVC: UIViewController {
         
     }
     
-
+    // MARK: - Helper Methods
+    
+    // set loading state
+    private func setLoading(_ loading: Bool) {
+        if loading {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.startAnimating()
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.stopAnimating()
+            }
+        }
+    }
     
 }
