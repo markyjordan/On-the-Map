@@ -45,6 +45,17 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     // find the user input location
     @IBAction func findLocation(_ sender: Any) {
+        setLoading(true)
+        let location = locationTextField.text
+        
+        // check to see that the provided url can be opened
+        guard let url = URL(string: self.webLinkTextField.text!), UIApplication.shared.canOpenURL(url) else {
+            setLoading(false)
+            
+            // show an alert for an invalid URL
+        }
+        
+        geocodeLocation(location ?? "")
         
     }
     
@@ -64,5 +75,7 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
+
     
 }
