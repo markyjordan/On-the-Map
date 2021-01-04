@@ -10,6 +10,17 @@ import UIKit
 
 extension UIViewController {
     
+    // change button tint to reflect its current state
+    func buttonEnabled(_ enabled: Bool, button: CustomButton) {
+        if enabled {
+            button.isEnabled = true
+            button.alpha = 1.0
+        } else {
+            button.isEnabled = false
+            button.alpha = 0.5
+        }
+    }
+
     // hide the keyboard when users taps anywhere outside a textfield
     func dismissKeyboardOnTap() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
