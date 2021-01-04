@@ -12,6 +12,10 @@ class AddLocationVC: UIViewController {
     
     // MARK: - Outlets/Properties
     
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var webLinkTextField: UITextField!
+    @IBOutlet weak var findLocationButton: CustomButton!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     
     // MARK: - Life Cycle
