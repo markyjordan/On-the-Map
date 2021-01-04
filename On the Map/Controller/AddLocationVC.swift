@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class AddLocationVC: UIViewController, UITextFieldDelegate {
     
@@ -76,6 +77,12 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-
+    private func geocodeLocation(_ location: String) {
+        CLGeocoder().geocodeAddressString(location) { (placemark, error) in
+            if let error = error {
+                Alert.showLocationNotFound(on: self, message: error.localizedDescription as! Error)
+            }
+        }
+    }
     
 }
