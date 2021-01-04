@@ -55,10 +55,12 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         if loading {
             DispatchQueue.main.async {
                 self.activityIndicatorView.startAnimating()
+                self.buttonEnabled(false, button: self.findLocationButton)
             }
         } else {
             DispatchQueue.main.async {
                 self.activityIndicatorView.stopAnimating()
+                self.buttonEnabled(true, button: self.findLocationButton)
             }
         }
     }
