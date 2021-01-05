@@ -30,9 +30,14 @@ struct Alert {
         showBasicAlert(on: vc, title: "Log In Failed", message: "Please enter a valid email and password to continue.")
     }
     
-    // invalid location url
+    // invalid url
     static func showInvalidURL(on vc: UIViewController) {
         showBasicAlert(on: vc, title: "Invalid Link", message: "Cannot open URL.")
+    }
+    
+    // empty "link" text field
+    static func showMissingURL(on vc: UIViewController) {
+        showBasicAlert(on: vc, title: "Link Field Empty", message: "Please provide a valid URL in the \"link\" text field.")
     }
     
     // failed to forward location geocode

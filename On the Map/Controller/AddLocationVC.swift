@@ -81,6 +81,22 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         CLGeocoder().geocodeAddressString(location) { (placemark, error) in
             if let error = error {
                 Alert.showLocationNotFound(on: self, message: error.localizedDescription as! Error)
+                self.setLoading(false)
+            } else {
+                var location: CLLocation?
+                
+                if let marker = placemark, placemark.count > 0 {
+                    location = marker.first?.location
+                }
+                
+                if let location = location {
+                    self.loadNewLocation(location.coordinate)
+                } else {
+                    self.showAlert(message: "Please try again later.", title: "Error")
+                    self.setLoading(false)
+                    print("There was an error.")
+                }
+                
             }
         }
     }
