@@ -60,7 +60,6 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         
         UdacityClient.getStudentLocations { (locations, error) in
             self.locations = locations
-
             
             for student in self.locations {
     

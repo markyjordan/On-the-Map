@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import MapKit
 
 class LocationPreviewVC: UIViewController {
 
     // MARK: - Outlets/Properties
     
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var finishAddingLocationButton: CustomButton!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     
     // MARK: - Life Cycle

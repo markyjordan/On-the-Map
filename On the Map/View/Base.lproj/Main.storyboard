@@ -424,7 +424,7 @@
         <!--Add Location-->
         <scene sceneID="Njp-d8-uBx">
             <objects>
-                <viewController id="UEi-bq-2J5" sceneMemberID="viewController">
+                <viewController id="UEi-bq-2J5" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wk-wq-a0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,6 +442,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="y78-ll-zQh">
+                                <rect key="frame" x="197" y="422" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CS7-7M-PFS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -456,13 +459,20 @@
                             <constraint firstItem="CS7-7M-PFS" firstAttribute="trailing" secondItem="0BZ-5Q-DE1" secondAttribute="trailing" id="jiL-Zo-5mV"/>
                             <constraint firstItem="0BZ-5Q-DE1" firstAttribute="centerY" secondItem="CS7-7M-PFS" secondAttribute="centerY" id="lUE-9B-eTI"/>
                             <constraint firstItem="gkG-2t-Y8X" firstAttribute="leading" secondItem="CS7-7M-PFS" secondAttribute="leading" constant="36" id="nos-Od-2gb"/>
+                            <constraint firstItem="y78-ll-zQh" firstAttribute="centerY" secondItem="CS7-7M-PFS" secondAttribute="centerY" id="oQu-jK-64w"/>
+                            <constraint firstItem="y78-ll-zQh" firstAttribute="centerX" secondItem="CS7-7M-PFS" secondAttribute="centerX" id="umi-Ji-nue"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Location" id="wLb-Gr-0CL"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="y78-ll-zQh" id="HMs-6F-EN9"/>
+                        <outlet property="finishAddingLocationButton" destination="gkG-2t-Y8X" id="yJc-6d-NsY"/>
+                        <outlet property="mapView" destination="0BZ-5Q-DE1" id="Cry-iE-NR0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFM-st-ykE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4939" y="128"/>
+            <point key="canvasLocation" x="4937.68115942029" y="127.90178571428571"/>
         </scene>
     </scenes>
     <designables>
