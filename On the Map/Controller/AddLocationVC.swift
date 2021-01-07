@@ -75,6 +75,11 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
                 self.buttonEnabled(true, button: self.findLocationButton)
             }
         }
+        DispatchQueue.main.async {
+            self.locationTextField.isEnabled = !loading
+            self.webLinkTextField.isEnabled = !loading
+            self.findLocationButton.isEnabled = !loading
+        }
     }
     
     private func geocodeLocation(_ location: String) {
