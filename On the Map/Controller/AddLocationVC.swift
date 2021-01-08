@@ -106,4 +106,9 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    private func loadNewLocation(_ coordinate: CLLocationCoordinate2D) {
+        let controller = storyboard?.instantiateViewController(identifier: "LocationPreviewVC") as! LocationPreviewVC
+        
+    }
+    
 }

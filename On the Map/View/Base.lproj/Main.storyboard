@@ -424,7 +424,7 @@
         <!--Add Location-->
         <scene sceneID="Njp-d8-uBx">
             <objects>
-                <viewController id="UEi-bq-2J5" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationPreviewVC" id="UEi-bq-2J5" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wk-wq-a0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
