@@ -110,14 +110,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - UITextField Delegate Methods
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        <#code#>
-    }
-    
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        <#code#>
-    }
-    
     
     // MARK: - OAuth
     
