@@ -56,15 +56,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="hfw-ia-8gv">
-                                <rect key="frame" x="176" y="150" width="62" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="frm-Xg-Z1F"/>
-                                </constraints>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-Kc-A1w">
-                                <rect key="frame" x="197" y="685" width="20" height="20"/>
-                            </activityIndicatorView>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-M0-s6Y">
                                 <rect key="frame" x="90.5" y="558" width="233.5" height="32"/>
                                 <subviews>
@@ -84,30 +75,56 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ER-lb-Z3O" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="184" y="757" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="hfw-ia-8gv">
+                                <rect key="frame" x="176" y="256" width="62" height="62"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-Kc-A1w">
+                                <rect key="frame" x="197" y="740" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nh6-Mb-2Ql">
+                                <rect key="frame" x="36" y="640" width="342" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtm-N7-MsH" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="efs-8f-6nh"/>
+                                        </constraints>
+                                        <state key="normal" title="FB Login Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mtm-N7-MsH" firstAttribute="leading" secondItem="Nh6-Mb-2Ql" secondAttribute="leading" id="4TQ-3b-NeD"/>
+                                    <constraint firstItem="Mtm-N7-MsH" firstAttribute="centerX" secondItem="Nh6-Mb-2Ql" secondAttribute="centerX" id="7ZS-ot-VgR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mtm-N7-MsH" secondAttribute="trailing" id="C9D-eT-EWg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mtm-N7-MsH" secondAttribute="bottom" id="ULS-bG-JEA"/>
+                                    <constraint firstItem="Mtm-N7-MsH" firstAttribute="top" secondItem="Nh6-Mb-2Ql" secondAttribute="top" id="gcQ-Cg-M54"/>
+                                    <constraint firstAttribute="height" constant="50" id="tWL-4y-IMf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Nh6-Mb-2Ql" firstAttribute="top" secondItem="8lS-Uv-RFG" secondAttribute="bottom" constant="50" id="2Bd-xO-1Ac"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ig-Kc-A1w" secondAttribute="bottom" constant="102" id="4b1-5k-ETS"/>
                             <constraint firstItem="qr4-M0-s6Y" firstAttribute="top" secondItem="BfJ-M8-j20" secondAttribute="bottom" constant="20" id="53t-WN-OJo"/>
-                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6iI-EA-p3j"/>
-                            <constraint firstItem="hfw-ia-8gv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="7HF-dr-JPJ"/>
+                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="top" secondItem="Nh6-Mb-2Ql" secondAttribute="bottom" constant="50" id="6sj-3N-Nw3"/>
+                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Apo-8s-3Oc"/>
+                            <constraint firstItem="Nh6-Mb-2Ql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="DxX-m8-JBe"/>
                             <constraint firstItem="hfw-ia-8gv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ELO-z2-ruQ"/>
-                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="top" secondItem="qr4-M0-s6Y" secondAttribute="bottom" constant="95" id="Ssp-lO-8QL"/>
-                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="centerX" secondItem="5ER-lb-Z3O" secondAttribute="centerX" id="UGb-Kq-tt3"/>
+                            <constraint firstItem="BfJ-M8-j20" firstAttribute="top" secondItem="hfw-ia-8gv" secondAttribute="bottom" constant="50" id="LbC-K4-SYi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ig-Kc-A1w" secondAttribute="trailing" constant="197" id="OD3-bG-1CE"/>
+                            <constraint firstItem="hfw-ia-8gv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="212" id="Ucu-RW-QZB"/>
                             <constraint firstItem="qr4-M0-s6Y" firstAttribute="centerX" secondItem="BfJ-M8-j20" secondAttribute="centerX" id="Xqs-83-1IH"/>
+                            <constraint firstItem="Nh6-Mb-2Ql" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ysh-Yp-B8K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nh6-Mb-2Ql" secondAttribute="trailing" constant="36" id="b1Y-C9-uTi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BfJ-M8-j20" secondAttribute="trailing" constant="36" id="ewS-n4-B0c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ig-Kc-A1w" secondAttribute="trailing" constant="197" id="fRh-R9-pIO"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fvf-Yn-2qV"/>
-                            <constraint firstItem="5ER-lb-Z3O" firstAttribute="top" secondItem="1ig-Kc-A1w" secondAttribute="bottom" constant="52" id="hPp-N7-2eP"/>
-                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="hXf-J9-wSc"/>
+                            <constraint firstItem="hfw-ia-8gv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="ggf-gz-W1K"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="j6y-yO-KMP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hfw-ia-8gv" secondAttribute="trailing" constant="176" id="jln-4v-Hk7"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mOK-K5-Xam"/>
-                            <constraint firstItem="hfw-ia-8gv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="qkr-P5-zWn"/>
+                            <constraint firstItem="1ig-Kc-A1w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="xeF-1e-LrK"/>
                             <constraint firstItem="BfJ-M8-j20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="yDy-U7-ABT"/>
                         </constraints>
                     </view>
