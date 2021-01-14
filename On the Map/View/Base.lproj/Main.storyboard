@@ -176,7 +176,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mo9-GK-7ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="-200"/>
+            <point key="canvasLocation" x="1341" y="-250"/>
         </scene>
         <!--On the Map-->
         <scene sceneID="2mk-om-FaN">
@@ -216,7 +216,7 @@
                             <barButtonItem title="Item" image="icon_addpin" id="Kez-Kf-VhQ">
                                 <connections>
                                     <action selector="addLocation:" destination="C5f-so-C5Z" id="2Yt-re-kkE"/>
-                                    <segue destination="8Yr-vW-4Tx" kind="presentation" id="nII-RU-T1l"/>
+                                    <segue destination="8Yr-vW-4Tx" kind="presentation" identifier="addLocation" id="nII-RU-T1l"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="icon_refresh" id="ptW-f1-Kpj">
@@ -233,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIt-s0-na9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2243.4782608695655" y="-200.22321428571428"/>
+            <point key="canvasLocation" x="2243" y="-250"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KiL-1q-top">
@@ -249,7 +249,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHU-Fv-t2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3171" y="128"/>
+            <point key="canvasLocation" x="3143" y="128"/>
         </scene>
         <!--Add Location-->
         <scene sceneID="MSw-md-iFU">
@@ -353,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nli-Ng-BRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="493"/>
+            <point key="canvasLocation" x="1341" y="532"/>
         </scene>
         <!--On the Map-->
         <scene sceneID="tyL-jl-QOR">
@@ -412,7 +412,7 @@
                             <barButtonItem title="addLocation" image="icon_addpin" id="FJQ-wL-hnb">
                                 <connections>
                                     <action selector="addLocation:" destination="ROw-Dr-97c" id="1pY-48-i8q"/>
-                                    <segue destination="8Yr-vW-4Tx" kind="presentation" id="yPb-qk-WHP"/>
+                                    <segue destination="8Yr-vW-4Tx" kind="presentation" identifier="addLocation" id="yPb-qk-WHP"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="refreshListData" image="icon_refresh" id="AO2-l0-Tmk">
@@ -428,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJp-wq-2dH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2243.4782608695655" y="492.85714285714283"/>
+            <point key="canvasLocation" x="2242" y="532"/>
         </scene>
         <!--Add Location-->
         <scene sceneID="Njp-d8-uBx">
