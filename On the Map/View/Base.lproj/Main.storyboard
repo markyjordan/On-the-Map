@@ -359,9 +359,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-Ce-jAT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-Ce-jAT">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentTableViewCell" textLabel="oof-la-DD3" detailTextLabel="Lm1-sa-upu" imageView="8t4-nD-us1" style="IBUITableViewCellStyleSubtitle" id="A8n-iI-HuN">
@@ -397,6 +396,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RqJ-SA-U9l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nTG-Ce-jAT" firstAttribute="leading" secondItem="RqJ-SA-U9l" secondAttribute="leading" id="2EI-Jd-lWD"/>
+                            <constraint firstItem="nTG-Ce-jAT" firstAttribute="top" secondItem="RqJ-SA-U9l" secondAttribute="top" id="Ma3-Kw-aCF"/>
+                            <constraint firstItem="nTG-Ce-jAT" firstAttribute="centerY" secondItem="RqJ-SA-U9l" secondAttribute="centerY" id="c21-5r-qNA"/>
+                            <constraint firstItem="RqJ-SA-U9l" firstAttribute="trailing" secondItem="nTG-Ce-jAT" secondAttribute="trailing" id="htj-S6-94M"/>
+                            <constraint firstItem="RqJ-SA-U9l" firstAttribute="bottom" secondItem="nTG-Ce-jAT" secondAttribute="bottom" id="ikw-se-Zi2"/>
+                            <constraint firstItem="nTG-Ce-jAT" firstAttribute="centerX" secondItem="RqJ-SA-U9l" secondAttribute="centerX" id="x3d-Nj-DvR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="On the Map" id="E50-kl-rS8">
                         <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="ee9-XU-B9h">
