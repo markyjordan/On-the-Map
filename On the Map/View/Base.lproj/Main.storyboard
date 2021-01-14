@@ -56,17 +56,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-M0-s6Y">
-                                <rect key="frame" x="90.5" y="558" width="233.5" height="32"/>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-M0-s6Y">
+                                <rect key="frame" x="88" y="563" width="238.5" height="27"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lS-Uv-RFG">
-                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4S-Jx-zVE">
-                                        <rect key="frame" x="175.5" y="0.0" width="58" height="32"/>
+                                        <rect key="frame" x="180.5" y="0.0" width="58" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
@@ -107,7 +107,7 @@
                         <constraints>
                             <constraint firstItem="Nh6-Mb-2Ql" firstAttribute="top" secondItem="8lS-Uv-RFG" secondAttribute="bottom" constant="50" id="2Bd-xO-1Ac"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ig-Kc-A1w" secondAttribute="bottom" constant="102" id="4b1-5k-ETS"/>
-                            <constraint firstItem="qr4-M0-s6Y" firstAttribute="top" secondItem="BfJ-M8-j20" secondAttribute="bottom" constant="20" id="53t-WN-OJo"/>
+                            <constraint firstItem="qr4-M0-s6Y" firstAttribute="top" secondItem="BfJ-M8-j20" secondAttribute="bottom" constant="25" id="53t-WN-OJo"/>
                             <constraint firstItem="1ig-Kc-A1w" firstAttribute="top" secondItem="Nh6-Mb-2Ql" secondAttribute="bottom" constant="50" id="6sj-3N-Nw3"/>
                             <constraint firstItem="1ig-Kc-A1w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Apo-8s-3Oc"/>
                             <constraint firstItem="Nh6-Mb-2Ql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="DxX-m8-JBe"/>
