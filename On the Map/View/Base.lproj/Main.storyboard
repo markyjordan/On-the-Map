@@ -186,24 +186,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-TI-m6n">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jiz-rO-of1">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </mapView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-X6-4R5">
-                                <rect key="frame" x="197" y="397" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LZQ-bs-tzp">
+                                <rect key="frame" x="197" y="397.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3hj-fM-Abq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sTg-TI-m6n" firstAttribute="bottom" secondItem="3hj-fM-Abq" secondAttribute="bottom" id="7ZI-Km-gls"/>
-                            <constraint firstItem="3hj-fM-Abq" firstAttribute="trailing" secondItem="DTK-X6-4R5" secondAttribute="trailing" constant="197" id="BWy-qW-ach"/>
-                            <constraint firstItem="sTg-TI-m6n" firstAttribute="top" secondItem="3hj-fM-Abq" secondAttribute="top" id="Um9-KY-p1R"/>
-                            <constraint firstItem="DTK-X6-4R5" firstAttribute="leading" secondItem="3hj-fM-Abq" secondAttribute="leading" constant="197" id="Yri-CF-b3k"/>
-                            <constraint firstItem="sTg-TI-m6n" firstAttribute="trailing" secondItem="3hj-fM-Abq" secondAttribute="trailing" id="hhx-Dv-CPj"/>
-                            <constraint firstItem="3hj-fM-Abq" firstAttribute="bottom" secondItem="DTK-X6-4R5" secondAttribute="bottom" constant="342" id="jZK-lu-aqc"/>
-                            <constraint firstItem="sTg-TI-m6n" firstAttribute="leading" secondItem="3hj-fM-Abq" secondAttribute="leading" id="qkg-Yi-Ibp"/>
-                            <constraint firstItem="DTK-X6-4R5" firstAttribute="top" secondItem="3hj-fM-Abq" secondAttribute="top" constant="341" id="uqE-ZK-h8M"/>
+                            <constraint firstItem="LZQ-bs-tzp" firstAttribute="centerY" secondItem="3hj-fM-Abq" secondAttribute="centerY" id="4V4-YL-Ikb"/>
+                            <constraint firstItem="jiz-rO-of1" firstAttribute="centerX" secondItem="3hj-fM-Abq" secondAttribute="centerX" id="QaR-Mk-R7e"/>
+                            <constraint firstItem="3hj-fM-Abq" firstAttribute="trailing" secondItem="jiz-rO-of1" secondAttribute="trailing" id="SfU-el-jmo"/>
+                            <constraint firstItem="jiz-rO-of1" firstAttribute="leading" secondItem="3hj-fM-Abq" secondAttribute="leading" id="fQP-MN-J2F"/>
+                            <constraint firstItem="3hj-fM-Abq" firstAttribute="bottom" secondItem="jiz-rO-of1" secondAttribute="bottom" id="g6F-Wv-0NP"/>
+                            <constraint firstItem="jiz-rO-of1" firstAttribute="top" secondItem="3hj-fM-Abq" secondAttribute="top" id="o2h-yG-VjQ"/>
+                            <constraint firstItem="jiz-rO-of1" firstAttribute="centerY" secondItem="3hj-fM-Abq" secondAttribute="centerY" id="ry4-SR-t6A"/>
+                            <constraint firstItem="LZQ-bs-tzp" firstAttribute="centerX" secondItem="3hj-fM-Abq" secondAttribute="centerX" id="vdY-Zv-EpU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="On the Map" id="V1b-mc-Agu">
@@ -226,14 +226,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <connections>
-                        <outlet property="activityIndicatorView" destination="DTK-X6-4R5" id="2nh-0A-rE8"/>
-                        <outlet property="mapView" destination="sTg-TI-m6n" id="aG9-IC-DJx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIt-s0-na9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2243" y="-250"/>
+            <point key="canvasLocation" x="2242.0289855072465" y="-250.44642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KiL-1q-top">
@@ -481,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFM-st-ykE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4937.68115942029" y="127.90178571428571"/>
+            <point key="canvasLocation" x="5004" y="128"/>
         </scene>
     </scenes>
     <designables>
