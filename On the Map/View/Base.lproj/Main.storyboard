@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login VC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Login VC" customClass="LoginVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,12 +140,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486.95652173913049" y="127.90178571428571"/>
+            <point key="canvasLocation" x="-532" y="128"/>
         </scene>
-        <!--Tab BarVC-->
+        <!--Tab Bar VC-->
         <scene sceneID="a8R-gN-uVz">
             <objects>
-                <tabBarController id="VID-zl-F1y" customClass="TabBarVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="VID-zl-F1y" userLabel="Tab Bar VC" customClass="TabBarVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Qvl-bS-RV9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qma-4X-NLX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -159,7 +159,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6C-fF-Gjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="128"/>
+            <point key="canvasLocation" x="393" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gAD-qd-Uxe">
@@ -176,12 +176,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mo9-GK-7ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="-250"/>
+            <point key="canvasLocation" x="1316" y="-250"/>
         </scene>
-        <!--On the Map-->
+        <!--Map View VC-->
         <scene sceneID="2mk-om-FaN">
             <objects>
-                <viewController id="C5f-so-C5Z" customClass="MapViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C5f-so-C5Z" userLabel="Map View VC" customClass="MapViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Llt-sb-dM5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,12 +245,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHU-Fv-t2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3143" y="128"/>
+            <point key="canvasLocation" x="3175" y="128"/>
         </scene>
-        <!--Add Location-->
+        <!--Add Location VC-->
         <scene sceneID="MSw-md-iFU">
             <objects>
-                <viewController id="AFO-wg-QHI" customClass="AddLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AFO-wg-QHI" userLabel="Add Location VC" customClass="AddLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2D-3J-4bK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhS-wn-RGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4059" y="128"/>
+            <point key="canvasLocation" x="4099" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ex8-wr-QDe">
@@ -349,12 +349,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nli-Ng-BRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="532"/>
+            <point key="canvasLocation" x="1316" y="532"/>
         </scene>
-        <!--On the Map-->
+        <!--List Table View VC-->
         <scene sceneID="tyL-jl-QOR">
             <objects>
-                <viewController id="ROw-Dr-97c" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ROw-Dr-97c" userLabel="List Table View VC" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPV-k7-RwG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -426,10 +426,10 @@
             </objects>
             <point key="canvasLocation" x="2242" y="532"/>
         </scene>
-        <!--Add Location-->
+        <!--Location Preview VC-->
         <scene sceneID="Njp-d8-uBx">
             <objects>
-                <viewController storyboardIdentifier="LocationPreviewVC" id="UEi-bq-2J5" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationPreviewVC" id="UEi-bq-2J5" userLabel="Location Preview VC" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wk-wq-a0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -477,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFM-st-ykE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5004" y="128"/>
+            <point key="canvasLocation" x="5022" y="128"/>
         </scene>
     </scenes>
     <designables>
@@ -489,7 +489,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="nII-RU-T1l"/>
+        <segue reference="yPb-qk-WHP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>
