@@ -12,6 +12,7 @@ class ListTableViewVC: UITableViewController {
     // MARK: - Outlets/Properties
     
     @IBOutlet weak var studentListTableView: UITableView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     var students = [StudentLocation]()
     

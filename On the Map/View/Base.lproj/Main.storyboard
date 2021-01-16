@@ -399,6 +399,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zIS-nj-cJa">
+                                <rect key="frame" x="197" y="397.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RqJ-SA-U9l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -406,7 +409,9 @@
                             <constraint firstItem="nTG-Ce-jAT" firstAttribute="leading" secondItem="RqJ-SA-U9l" secondAttribute="leading" id="2EI-Jd-lWD"/>
                             <constraint firstItem="nTG-Ce-jAT" firstAttribute="top" secondItem="RqJ-SA-U9l" secondAttribute="top" id="Ma3-Kw-aCF"/>
                             <constraint firstItem="nTG-Ce-jAT" firstAttribute="centerY" secondItem="RqJ-SA-U9l" secondAttribute="centerY" id="c21-5r-qNA"/>
+                            <constraint firstItem="zIS-nj-cJa" firstAttribute="centerY" secondItem="RqJ-SA-U9l" secondAttribute="centerY" id="d4l-iU-hTQ"/>
                             <constraint firstItem="RqJ-SA-U9l" firstAttribute="trailing" secondItem="nTG-Ce-jAT" secondAttribute="trailing" id="htj-S6-94M"/>
+                            <constraint firstItem="zIS-nj-cJa" firstAttribute="centerX" secondItem="RqJ-SA-U9l" secondAttribute="centerX" id="ikJ-UE-Hiy"/>
                             <constraint firstItem="RqJ-SA-U9l" firstAttribute="bottom" secondItem="nTG-Ce-jAT" secondAttribute="bottom" id="ikw-se-Zi2"/>
                             <constraint firstItem="nTG-Ce-jAT" firstAttribute="centerX" secondItem="RqJ-SA-U9l" secondAttribute="centerX" id="x3d-Nj-DvR"/>
                         </constraints>
@@ -432,6 +437,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="zIS-nj-cJa" id="cU0-zD-Lpr"/>
                         <outlet property="studentListTableView" destination="nTG-Ce-jAT" id="NVN-xe-4x6"/>
                     </connections>
                 </viewController>
