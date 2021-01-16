@@ -63,8 +63,8 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
             
             for student in self.locations {
     
-                let lat = CLLocationDegrees(student.latitude as! Double)
-                let long = CLLocationDegrees(student.longitude as! Double)
+                let lat = CLLocationDegrees(student.latitude)
+                let long = CLLocationDegrees(student.longitude)
                 let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
                 let first = student.firstName
                 let last = student.lastName
