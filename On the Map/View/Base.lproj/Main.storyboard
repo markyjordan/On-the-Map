@@ -226,6 +226,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="LZQ-bs-tzp" id="2w8-tC-Nkh"/>
+                        <outlet property="mapView" destination="jiz-rO-of1" id="mzB-Vq-2Ge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIt-s0-na9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,7 +512,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="yPb-qk-WHP"/>
+        <segue reference="nII-RU-T1l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>
