@@ -290,7 +290,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="findLocation:" destination="AFO-wg-QHI" eventType="touchUpInside" id="tVg-g7-Pzf"/>
-                                            <segue destination="UEi-bq-2J5" kind="show" id="g51-R7-Jwq"/>
+                                            <segue destination="UEi-bq-2J5" kind="show" identifier="locationPreview" id="g51-R7-Jwq"/>
                                         </connections>
                                     </button>
                                 </subviews>
