@@ -46,11 +46,6 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     }
     
     
-    @IBAction func addLocation(_ sender: Any) {
-        
-    }
-    
-    
     // MARK: - Helpers
     
     func getMapData() {

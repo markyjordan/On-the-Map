@@ -54,11 +54,7 @@ class ListTableViewVC: UITableViewController {
         }
         
     }
-    
-    @IBAction func addLocation(_ sender: Any) {
-        
-        
-    }
+
     
     // MARK: - Table View Delegate and Data Source Methods
     

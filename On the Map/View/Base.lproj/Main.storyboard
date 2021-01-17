@@ -435,7 +435,7 @@
                             </barButtonItem>
                             <barButtonItem title="refreshListData" image="icon_refresh" id="AO2-l0-Tmk">
                                 <connections>
-                                    <action selector="refreshTableViewData:" destination="ROw-Dr-97c" id="Jba-fz-mcT"/>
+                                    <action selector="refreshListData:" destination="ROw-Dr-97c" id="Qg2-3O-3Mc"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
