@@ -11,7 +11,7 @@
         <!--Login VC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Login VC" customClass="LoginVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login VC" id="BYZ-38-t0r" userLabel="Login VC" customClass="LoginVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--Tab Bar VC-->
         <scene sceneID="a8R-gN-uVz">
             <objects>
-                <tabBarController id="VID-zl-F1y" userLabel="Tab Bar VC" customClass="TabBarVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Tab Bar VC" id="VID-zl-F1y" userLabel="Tab Bar VC" customClass="TabBarVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Qvl-bS-RV9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qma-4X-NLX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -181,7 +181,7 @@
         <!--Map View VC-->
         <scene sceneID="2mk-om-FaN">
             <objects>
-                <viewController id="C5f-so-C5Z" userLabel="Map View VC" customClass="MapViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map View VC" id="C5f-so-C5Z" userLabel="Map View VC" customClass="MapViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Llt-sb-dM5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,7 +254,7 @@
         <!--Add Location VC-->
         <scene sceneID="MSw-md-iFU">
             <objects>
-                <viewController id="AFO-wg-QHI" userLabel="Add Location VC" customClass="AddLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Add Location VC" id="AFO-wg-QHI" userLabel="Add Location VC" customClass="AddLocationVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2D-3J-4bK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,7 +364,7 @@
         <!--List Table View VC-->
         <scene sceneID="tyL-jl-QOR">
             <objects>
-                <viewController id="ROw-Dr-97c" userLabel="List Table View VC" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="List Table View VC" id="ROw-Dr-97c" userLabel="List Table View VC" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPV-k7-RwG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,7 +452,7 @@
         <!--Location Preview VC-->
         <scene sceneID="Njp-d8-uBx">
             <objects>
-                <viewController storyboardIdentifier="LocationPreviewVC" id="UEi-bq-2J5" userLabel="Location Preview VC" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Location Preview VC" id="UEi-bq-2J5" userLabel="Location Preview VC" customClass="LocationPreviewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wk-wq-a0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -512,7 +512,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="nII-RU-T1l"/>
+        <segue reference="yPb-qk-WHP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>
