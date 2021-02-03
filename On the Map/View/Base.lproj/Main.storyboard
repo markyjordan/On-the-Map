@@ -424,6 +424,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addLocation" destination="Wb2-dP-RkW" id="UeB-Py-HIA"/>
+                        <outlet property="refreshList" destination="Vd5-Np-Tp7" id="38h-KV-Ijf"/>
                         <outlet property="studentListTableView" destination="T8k-f8-Djk" id="f1W-Ob-Gu1"/>
                     </connections>
                 </tableViewController>
@@ -494,7 +496,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="nII-RU-T1l"/>
+        <segue reference="Caj-7H-ZwI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>

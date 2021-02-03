@@ -12,7 +12,9 @@ class ListTableViewVC: UITableViewController {
     // MARK: - Outlets/Properties
     
     @IBOutlet weak var studentListTableView: UITableView!
-
+    @IBOutlet weak var refreshList: UIBarButtonItem!
+    @IBOutlet weak var addLocation: UIBarButtonItem!
+    
     var activityIndicatorView: UIActivityIndicatorView!
     var students = [StudentLocation]()
     
@@ -24,7 +26,7 @@ class ListTableViewVC: UITableViewController {
         
         //  setup activity indicator view
         activityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
-        self.view.addSubview(activityIndicatorView)
+        view.addSubview(activityIndicatorView)
         activityIndicatorView.bringSubviewToFront(self.view)
         activityIndicatorView.center = self.view.center
     }
@@ -33,7 +35,7 @@ class ListTableViewVC: UITableViewController {
     // MARK: - User Interface
     
     @IBAction func logout(_ sender: Any) {
-        //  include activity indicator animation
+        //  set activity indicator view
         
         UdacityClient.logout {
             DispatchQueue.main.async {
