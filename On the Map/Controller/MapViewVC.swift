@@ -13,6 +13,8 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     // MARK: - Outlets/Properties
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var refreshMap: UIBarButtonItem!
+    @IBOutlet weak var addLocation: UIBarButtonItem!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     var locations = [StudentLocation]()
@@ -97,7 +99,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         
         //  enable/disable UI views
         DispatchQueue.main.async {
-            self.refreshList.isEnabled = !fetchingData
+            self.refreshMap.isEnabled = !fetchingData
             self.addLocation.isEnabled = !fetchingData
         }
     }

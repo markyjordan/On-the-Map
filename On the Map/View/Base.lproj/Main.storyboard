@@ -228,7 +228,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicatorView" destination="LZQ-bs-tzp" id="2w8-tC-Nkh"/>
+                        <outlet property="addLocation" destination="Kez-Kf-VhQ" id="L0W-6l-4FR"/>
                         <outlet property="mapView" destination="jiz-rO-of1" id="mzB-Vq-2Ge"/>
+                        <outlet property="refreshMap" destination="ptW-f1-Kpj" id="pk2-G6-8Jy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIt-s0-na9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -496,7 +498,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Caj-7H-ZwI"/>
+        <segue reference="nII-RU-T1l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>
