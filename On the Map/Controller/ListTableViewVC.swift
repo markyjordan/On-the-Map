@@ -90,7 +90,8 @@ class ListTableViewVC: UITableViewController {
         
         //  enable/disable UI views
         DispatchQueue.main.async {
-
+            self.refreshList.isEnabled = !fetchingData
+            self.addLocation.isEnabled = !fetchingData
         }
     }
 
