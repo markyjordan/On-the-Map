@@ -1,4 +1,4 @@
-//
+ //
 //  MapViewVC.swift
 //  On the Map
 //
@@ -98,7 +98,6 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         } else {
             pinView!.annotation = annotation
         }
-        
         return pinView
     }
     
