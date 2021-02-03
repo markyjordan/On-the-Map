@@ -59,6 +59,38 @@ class ListTableViewVC: UITableViewController {
         }
         
     }
+    
+    // MARK: - Helpers
+    
+//    func showActivityIndicator() {
+//        activityIndicatorView.isHidden = false
+//        activityIndicatorView.startAnimating()
+//    }
+//
+//    func hideActivityIndicator() {
+//        activityIndicatorView.stopAnimating()
+//        activityIndicatorView.isHidden = true
+//    }
+    
+    //  set activity indicator view state
+    func setActivityIndicator(_ fetchingData: Bool) {
+        if fetchingData {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.isHidden = false
+                self.activityIndicatorView.startAnimating()
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.stopAnimating()
+                self.activityIndicatorView.isHidden = true
+            }
+        }
+        
+        //  enable/disable UI views
+        DispatchQueue.main.async {
+
+        }
+    }
 
     
     // MARK: - Table View Delegate and Data Source Methods

@@ -28,28 +28,28 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // setup views
+        //  setup views
         setupLoginButton()
         setupFacebookLoginButton()
         
-        // configure Facebook OAuth
+        //  configure Facebook OAuth
         setupFacebookOAuth()
         
-        // hide the keyboard when users taps anywhere outside a textfield
+        //  hide the keyboard when users taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
-        // lock the view orientation to portrait mode
+        //  lock the view orientation to portrait mode
         Utilities.lockOrientation(.portrait)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
        
-        // reset the view orientation when view is being removed
+        //  reset the view orientation when view is being removed
         Utilities.lockOrientation(.all)
     }
     
@@ -71,7 +71,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - Helper Methods
     
-    // login network request completionHandler
+    //  login network request completionHandler
     func handleLoginResponse(success: Bool, error: Error?) {
         setLoggingIn(false)
         
@@ -82,12 +82,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // set login button properties
+    //  set login button properties
     private func setupLoginButton() {
         loginButton.layer.cornerRadius = Constants.buttonCornerRadius
     }
     
-    // set login state
+    //  set login state
     func setLoggingIn(_ loggingIn: Bool) {
         if loggingIn {
             DispatchQueue.main.async {
@@ -99,7 +99,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             }
         }
         
-        // enable/disable UI views
+        //  enable/disable UI views
         DispatchQueue.main.async {
             self.emailTextField.isEnabled = !loggingIn
             self.passwordTextField.isEnabled = !loggingIn
@@ -113,16 +113,16 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - OAuth
     
-    // Facebook Authentication
+    //  Facebook Authentication
     
-    // setup facebook login button
+    //  setup facebook login button
     private func setupFacebookLoginButton() {
         
-        // set properties
+        //  set properties
         let buttonTitle = NSAttributedString(string: "Sign In with Facebook")
         facebookLoginButton.setAttributedTitle(buttonTitle, for: .normal)
         
-        // add button to the view and set layout constraints
+        //  add button to the view and set layout constraints
         view.addSubview(facebookLoginButton)
         
         facebookLoginButton.translatesAutoresizingMaskIntoConstraints = false
@@ -137,13 +137,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     private func setupFacebookOAuth() {
-        // function to check for an existing facebook access token at view load
+        //  function to check for an existing facebook access token at view load
         if let token = AccessToken.current,!token.isExpired {
             // user is loggin in
             
         }
         
-        // request additional read permissions for facebook OAuth
+        //  request additional read permissions for facebook OAuth
         facebookLoginButton.permissions = ["public_profile", "email"]
     }
 }
