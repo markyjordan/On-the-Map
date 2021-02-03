@@ -12,8 +12,8 @@ class ListTableViewVC: UITableViewController {
     // MARK: - Outlets/Properties
     
     @IBOutlet weak var studentListTableView: UITableView!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
-    
+
+    var activityIndicatorView: UIActivityIndicatorView!
     var students = [StudentLocation]()
     
     
@@ -21,27 +21,32 @@ class ListTableViewVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //  setup activity indicator view
+        activityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+        self.view.addSubview(activityIndicatorView)
+        activityIndicatorView.bringSubviewToFront(self.view)
+        activityIndicatorView.center = self.view.center
     }
     
     
     // MARK: - User Interface
     
     @IBAction func logout(_ sender: Any) {
-        // include activity indicator animation
+        //  include activity indicator animation
         
         UdacityClient.logout {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
                 
-                // hide activity indicator animation
+                //  hide activity indicator animation
             }
         }
         
     }
     
     @IBAction func refreshListData(_ sender: Any) {
-        // include activity indicator animation
+        //  include activity indicator animation
         
         UdacityClient.getStudentLocations { (students, error) in
             self.students = students
@@ -49,7 +54,7 @@ class ListTableViewVC: UITableViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 
-                // hide activity indicator animation
+                //  hide activity indicator animation
             }
         }
         
