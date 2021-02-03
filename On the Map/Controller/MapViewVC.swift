@@ -81,6 +81,27 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         }
     }
     
+    //  set activity indicator view state
+    func setActivityIndicator(_ fetchingData: Bool) {
+        if fetchingData {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.isHidden = false
+                self.activityIndicatorView.startAnimating()
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.stopAnimating()
+                self.activityIndicatorView.isHidden = true
+            }
+        }
+        
+        //  enable/disable UI views
+        DispatchQueue.main.async {
+            self.refreshList.isEnabled = !fetchingData
+            self.addLocation.isEnabled = !fetchingData
+        }
+    }
+    
     
     // MARK: - MKMapViewDelegate Methods
     
