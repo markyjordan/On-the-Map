@@ -71,7 +71,7 @@ class ListTableViewVC: UITableViewController {
     //  MARK: - Helpers
     
     //  retrieve data from the server and subsequently update the UI
-    func getListData() {
+    private func getListData() {
         setActivityIndicator(true)
         
         UdacityNetworkClient.getStudentLocations { (students, error) in
@@ -85,7 +85,7 @@ class ListTableViewVC: UITableViewController {
     }
     
     //  set activity indicator view state
-    func setActivityIndicator(_ fetchingData: Bool) {
+    private func setActivityIndicator(_ fetchingData: Bool) {
         if fetchingData {
             DispatchQueue.main.async {
                 self.activityIndicatorView.isHidden = false

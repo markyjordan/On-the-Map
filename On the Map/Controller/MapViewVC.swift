@@ -60,7 +60,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     
     //  MARK: - Helpers
     
-    func getMapData() {
+    private func getMapData() {
         setActivityIndicator(true)
         self.mapView.removeAnnotations(self.annotations)
         self.annotations.removeAll()
@@ -93,7 +93,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     }
     
     //  set activity indicator view state
-    func setActivityIndicator(_ fetchingData: Bool) {
+    private func setActivityIndicator(_ fetchingData: Bool) {
         if fetchingData {
             DispatchQueue.main.async {
                 self.activityIndicatorView.isHidden = false
