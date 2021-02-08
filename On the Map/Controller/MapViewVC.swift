@@ -23,6 +23,13 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     
     //  MARK: - Life Cycle
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //  set the map view delegate
+        mapView.delegate = self
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
