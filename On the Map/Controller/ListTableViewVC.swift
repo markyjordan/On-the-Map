@@ -31,6 +31,12 @@ class ListTableViewVC: UITableViewController {
         activityIndicatorView.center = self.view.center
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        getListData()
+    }
+    
     
     //  MARK: - Navigation
     
@@ -62,6 +68,7 @@ class ListTableViewVC: UITableViewController {
     }
     
     //  MARK: - Helpers
+    
     
     //  set activity indicator view state
     func setActivityIndicator(_ fetchingData: Bool) {
