@@ -10,7 +10,7 @@ import MapKit
 
 class MapViewVC: UIViewController, MKMapViewDelegate {
 
-    // MARK: - Outlets/Properties
+    //  MARK: - Outlets/Properties
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var refreshMap: UIBarButtonItem!
@@ -21,7 +21,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     var annotations = [MKPointAnnotation]()
     
     
-    // MARK: - Life Cycle
+    //  MARK: - Life Cycle
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -30,15 +30,15 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     }
     
     
-    // MARK: - User Interface
+    //  MARK: - User Interface
     
     @IBAction func logout(_ sender: Any) {
-        self.activityIndicatorView.startAnimating()
+        setActivityIndicator(true)
         
         UdacityClient.logout {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
-                self.activityIndicatorView.stopAnimating()
+                self.setActivityIndicator(false)
             }
         }
     }
@@ -48,10 +48,10 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     }
     
     
-    // MARK: - Helpers
+    //  MARK: - Helpers
     
     func getMapData() {
-        self.activityIndicatorView.startAnimating()
+        setActivityIndicator(true)
         self.mapView.removeAnnotations(self.annotations)
         self.annotations.removeAll()
         
@@ -59,7 +59,6 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
             self.locations = locations
             
             for student in self.locations {
-    
                 let lat = CLLocationDegrees(student.latitude)
                 let long = CLLocationDegrees(student.longitude)
                 let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
@@ -67,8 +66,8 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
                 let last = student.lastName
                 let mediaURL = student.mediaURL
                 
-                // create the annotation and set the coordinate, title and subtitle properties
-                // finally, add it to the global array of map annotations
+                //  create the annotation and set the coordinate, title and subtitle properties
+                //  finally, add it to the global array of map annotations
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = coordinate
                 annotation.title = "\(first) \(last)"
@@ -78,7 +77,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
             
             DispatchQueue.main.async {
                 self.mapView.addAnnotations(self.annotations)
-                self.activityIndicatorView.stopAnimating()
+                self.setActivityIndicator(false)
             }
         }
     }
@@ -105,7 +104,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     }
     
     
-    // MARK: - MKMapViewDelegate Methods
+    //  MARK: - MKMapViewDelegate Methods
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
