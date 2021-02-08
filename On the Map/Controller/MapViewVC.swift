@@ -37,7 +37,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     }
     
     
-    //  MARK: - User Interface
+    //  MARK: - Navigation
     
     @IBAction func logout(_ sender: Any) {
         setActivityIndicator(true)
@@ -49,6 +49,9 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
             }
         }
     }
+    
+
+    //  MARK: - User Interface
     
     @IBAction func refreshMapData(_ sender: Any) {
         getMapData()

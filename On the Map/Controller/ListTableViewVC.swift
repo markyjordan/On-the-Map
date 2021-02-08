@@ -9,7 +9,7 @@ import UIKit
 
 class ListTableViewVC: UITableViewController {
 
-    // MARK: - Outlets/Properties
+    //  MARK: - Outlets/Properties
     
     @IBOutlet weak var studentListTableView: UITableView!
     @IBOutlet weak var refreshList: UIBarButtonItem!
@@ -19,7 +19,7 @@ class ListTableViewVC: UITableViewController {
     var students = [StudentLocation]()
     
     
-    // MARK: - Life Cycle
+    //  MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,47 +32,36 @@ class ListTableViewVC: UITableViewController {
     }
     
     
-    // MARK: - User Interface
+    //  MARK: - Navigation
     
     @IBAction func logout(_ sender: Any) {
-        //  set activity indicator view
+        setActivityIndicator(true)
         
         UdacityClient.logout {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
-                
-                //  hide activity indicator animation
+                self.setActivityIndicator(false)
             }
         }
-        
     }
     
+    
+    //  MARK: - User Interface
+    
     @IBAction func refreshListData(_ sender: Any) {
-        //  include activity indicator animation
+        setActivityIndicator(true)
         
         UdacityClient.getStudentLocations { (students, error) in
             self.students = students
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-                
-                //  hide activity indicator animation
+                self.setActivityIndicator(false)
             }
         }
-        
     }
     
-    // MARK: - Helpers
-    
-//    func showActivityIndicator() {
-//        activityIndicatorView.isHidden = false
-//        activityIndicatorView.startAnimating()
-//    }
-//
-//    func hideActivityIndicator() {
-//        activityIndicatorView.stopAnimating()
-//        activityIndicatorView.isHidden = true
-//    }
+    //  MARK: - Helpers
     
     //  set activity indicator view state
     func setActivityIndicator(_ fetchingData: Bool) {
@@ -96,7 +85,7 @@ class ListTableViewVC: UITableViewController {
     }
 
     
-    // MARK: - Table View Delegate and Data Source Methods
+    //  MARK: - Table View Delegate and Data Source Methods
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
