@@ -59,13 +59,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonTapped(_ sender: Any) {
         setLoggingIn(true)
         
-        UdacityClient.login(email: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completionHandler: handleLoginResponse(success:error:))
+        UdacityNetworkClient.login(email: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completionHandler: handleLoginResponse(success:error:))
     }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
         setLoggingIn(true)
         
-        UIApplication.shared.open(UdacityClient.Endpoints.signUp.url, options: [:], completionHandler: nil)
+        UIApplication.shared.open(UdacityNetworkClient.Endpoints.signUp.url, options: [:], completionHandler: nil)
     }
 
     

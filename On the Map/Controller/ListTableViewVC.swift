@@ -43,7 +43,7 @@ class ListTableViewVC: UITableViewController {
     @IBAction func logout(_ sender: Any) {
         setActivityIndicator(true)
         
-        UdacityClient.logout {
+        UdacityNetworkClient.logout {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
                 self.setActivityIndicator(false)
@@ -57,7 +57,7 @@ class ListTableViewVC: UITableViewController {
     @IBAction func refreshListData(_ sender: Any) {
         setActivityIndicator(true)
         
-        UdacityClient.getStudentLocations { (students, error) in
+        UdacityNetworkClient.getStudentLocations { (students, error) in
             self.students = students
             
             DispatchQueue.main.async {
@@ -74,7 +74,7 @@ class ListTableViewVC: UITableViewController {
     func getListData() {
         setActivityIndicator(true)
         
-        UdacityClient.getStudentLocations { (students, error) in
+        UdacityNetworkClient.getStudentLocations { (students, error) in
             self.students = students
             
             DispatchQueue.main.async {

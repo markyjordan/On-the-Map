@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UdacityClient {
+class UdacityNetworkClient {
     
     struct Auth {
         static var firstName = ""

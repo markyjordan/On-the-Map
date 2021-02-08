@@ -42,7 +42,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     @IBAction func logout(_ sender: Any) {
         setActivityIndicator(true)
         
-        UdacityClient.logout {
+        UdacityNetworkClient.logout {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
                 self.setActivityIndicator(false)
@@ -65,7 +65,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         self.mapView.removeAnnotations(self.annotations)
         self.annotations.removeAll()
         
-        UdacityClient.getStudentLocations { (locations, error) in
+        UdacityNetworkClient.getStudentLocations { (locations, error) in
             self.locations = locations
             
             for student in self.locations {
