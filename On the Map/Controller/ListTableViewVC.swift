@@ -67,8 +67,22 @@ class ListTableViewVC: UITableViewController {
         }
     }
     
+    
     //  MARK: - Helpers
     
+    //  retrieve data from the server and subsequently update the UI
+    func getListData() {
+        setActivityIndicator(true)
+        
+        UdacityClient.getStudentLocations { (students, error) in
+            self.students = students
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.setActivityIndicator(false)
+            }
+        }
+    }
     
     //  set activity indicator view state
     func setActivityIndicator(_ fetchingData: Bool) {
