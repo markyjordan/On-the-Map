@@ -22,6 +22,7 @@ class NetworkRequestHelper {
                 DispatchQueue.main.async {
                     completionHandler(nil, error)
                 }
+                return
             }
             do {
                 let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
@@ -54,6 +55,7 @@ class NetworkRequestHelper {
                 DispatchQueue.main.async {
                     completionHandler(nil, error)
                 }
+                return
             }
             do {
                 let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
@@ -86,6 +88,7 @@ class NetworkRequestHelper {
                 DispatchQueue.main.async {
                     completionHandler(nil, error)
                 }
+                return
             }
             do {
                 let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
