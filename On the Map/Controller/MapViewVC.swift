@@ -69,12 +69,12 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
             self.locations = locations
             
             for student in self.locations {
-                let lat = CLLocationDegrees(student.latitude)
-                let long = CLLocationDegrees(student.longitude)
+                let lat = CLLocationDegrees(student.latitude ?? 0.0)
+                let long = CLLocationDegrees(student.longitude ?? 0.0)a
                 let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                let first = student.firstName
-                let last = student.lastName
-                let mediaURL = student.mediaURL
+                let first = student.firstName ?? ""
+                let last = student.lastName ?? ""
+                let mediaURL = student.mediaURL ?? ""
                 
                 //  create the annotation and set the coordinate, title and subtitle properties
                 //  finally, add it to the global array of map annotations
