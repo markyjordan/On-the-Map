@@ -53,6 +53,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
 
     //  MARK: - User Interface
     
+    //  retrieve data from the server and subsequently update the UI
     @IBAction func refreshMapData(_ sender: Any) {
         getMapData()
     }
