@@ -68,13 +68,13 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
         UdacityNetworkClient.getStudentLocations { (locations, error) in
             self.locations = locations
             
-            for student in self.locations {
-                let lat = CLLocationDegrees(student.latitude ?? 0.0)
-                let long = CLLocationDegrees(student.longitude ?? 0.0)a
+            for location in self.locations {
+                let lat = CLLocationDegrees(location.latitude ?? 0.0)
+                let long = CLLocationDegrees(location.longitude ?? 0.0)
                 let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                let first = student.firstName ?? ""
-                let last = student.lastName ?? ""
-                let mediaURL = student.mediaURL ?? ""
+                let first = location.firstName ?? ""
+                let last = location.lastName ?? ""
+                let mediaURL = location.mediaURL ?? ""
                 
                 //  create the annotation and set the coordinate, title and subtitle properties
                 //  finally, add it to the global array of map annotations
@@ -117,7 +117,6 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     //  MARK: - MKMapViewDelegate Methods
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
         let reuseId = "pin"
         
         var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
