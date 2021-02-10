@@ -16,7 +16,7 @@ class ListTableViewVC: UITableViewController {
     @IBOutlet weak var addLocation: UIBarButtonItem!
     
     var activityIndicatorView: UIActivityIndicatorView!
-    var students = [StudentLocation]()
+    var studentLocationData = [StudentLocation]()
     
     
     //  MARK: - Life Cycle
@@ -58,7 +58,7 @@ class ListTableViewVC: UITableViewController {
         setActivityIndicator(true)
         
         UdacityNetworkClient.getStudentLocations { (students, error) in
-            self.students = students
+            self.studentLocationData = students
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -75,7 +75,7 @@ class ListTableViewVC: UITableViewController {
         setActivityIndicator(true)
         
         UdacityNetworkClient.getStudentLocations { (students, error) in
-            self.students = students
+            self.studentLocationData = students
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -113,12 +113,12 @@ class ListTableViewVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.students.count
+        return self.studentLocationData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
-        let student = students[indexPath.row]
+        let student = studentLocationData[indexPath.row]
         cell.textLabel?.text = "\(student.firstName)" + " " + "\(student.lastName)"
         cell.detailTextLabel?.text = "\(student.mediaURL ?? "")"
         return cell
