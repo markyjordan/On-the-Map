@@ -44,13 +44,13 @@ class UdacityNetworkClient {
             }
         }
         
-        // generate a URL from the endpoint's associated string value
+        //  generate a URL from the endpoint's associated string value
         var url: URL {
             return URL(string: urlString)!
         }
     }
     
-    // MARK: - Network Request Methods
+    //  MARK: - Network Request Methods
     
     class func login(email: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
         let requestBody = LoginRequest(udacity: LoginCredentials(username: "\(email)", password: "\(password)"))

@@ -363,10 +363,10 @@
             </objects>
             <point key="canvasLocation" x="1316" y="532"/>
         </scene>
-        <!--On the Map-->
+        <!--List Table View VC-->
         <scene sceneID="Seh-0l-mR4">
             <objects>
-                <tableViewController id="v6B-d3-dvZ" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="v6B-d3-dvZ" userLabel="List Table View VC" customClass="ListTableViewVC" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="T8k-f8-Djk" userLabel="List Table View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -498,7 +498,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="nII-RU-T1l"/>
+        <segue reference="Caj-7H-ZwI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon_addpin" width="24" height="24"/>

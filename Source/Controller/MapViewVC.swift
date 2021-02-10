@@ -39,7 +39,7 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
     
     //  MARK: - Navigation
     
-    @IBAction func logout(_ sender: Any) {
+    @IBAction func logout(_ sender: UIBarButtonItem) {
         setActivityIndicator(true)
         
         UdacityNetworkClient.logout {

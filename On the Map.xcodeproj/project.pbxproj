@@ -158,14 +158,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		E21DDBCE2567F52B00480F16 /* App Utilities */ = {
+		E21DDBCE2567F52B00480F16 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				E28BF9FC2550DAA2006669BE /* Constants.swift */,
 				E28BFA3A2558E70B006669BE /* Utilities.swift */,
 				E21DDBD32567FEC600480F16 /* Alert.swift */,
 			);
-			path = "App Utilities";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E21DDBD22567F75200480F16 /* Networking */ = {
@@ -177,10 +177,20 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		E230276425D494E000E01AD8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28BF9C6254EFBE3006669BE /* Info.plist */,
+				E28BF9B8254EFBDE006669BE /* AppDelegate.swift */,
+				E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		E28BF9AC254EFBDE006669BE = {
 			isa = PBXGroup;
 			children = (
-				E28BF9B7254EFBDE006669BE /* On the Map */,
+				E28BF9B7254EFBDE006669BE /* Source */,
 				E28BF9CE254EFBE4006669BE /* On the MapTests */,
 				E28BF9D9254EFBE4006669BE /* On the MapUITests */,
 				E28BF9B6254EFBDE006669BE /* Products */,
@@ -199,20 +209,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E28BF9B7254EFBDE006669BE /* On the Map */ = {
+		E28BF9B7254EFBDE006669BE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E28BF9C6254EFBE3006669BE /* Info.plist */,
-				E28BF9B8254EFBDE006669BE /* AppDelegate.swift */,
-				E28BF9BA254EFBDE006669BE /* SceneDelegate.swift */,
-				E21DDBCE2567F52B00480F16 /* App Utilities */,
-				E28BFA45255D1277006669BE /* Networking */,
+				E230276425D494E000E01AD8 /* Support Files */,
+				E21DDBCE2567F52B00480F16 /* Helpers */,
+				E28BF9F1254EFD74006669BE /* Assets */,
+				E28BFA45255D1277006669BE /* Networking Manager */,
 				E28BF9EE254EFD36006669BE /* Model */,
 				E28BF9EF254EFD3C006669BE /* View */,
 				E28BF9F0254EFD43006669BE /* Controller */,
-				E28BF9F1254EFD74006669BE /* Assets */,
 			);
-			path = "On the Map";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E28BF9CE254EFBE4006669BE /* On the MapTests */ = {
@@ -297,13 +305,13 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		E28BFA45255D1277006669BE /* Networking */ = {
+		E28BFA45255D1277006669BE /* Networking Manager */ = {
 			isa = PBXGroup;
 			children = (
-				E2FBB66D257A2458008D0EE7 /* Clients */,
+				E28BF9F42550DA5C006669BE /* UdacityClient.swift */,
 				E2FBB6602577779E008D0EE7 /* NetworkRequestHelper.swift */,
 			);
-			path = Networking;
+			path = "Networking Manager";
 			sourceTree = "<group>";
 		};
 		E2FBB666257777E7008D0EE7 /* Data */ = {
@@ -312,14 +320,6 @@
 				E267851C255E724600741DAE /* StudentLocation.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		E2FBB66D257A2458008D0EE7 /* Clients */ = {
-			isa = PBXGroup;
-			children = (
-				E28BF9F42550DA5C006669BE /* UdacityClient.swift */,
-			);
-			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

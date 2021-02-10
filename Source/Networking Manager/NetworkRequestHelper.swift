@@ -9,7 +9,7 @@ import Foundation
 
 class NetworkRequestHelper {
     
-    // MARK: - HTTP "GET" Requests
+    //  MARK: - HTTP "GET" Requests
     
     class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
         var request = URLRequest(url: url)
@@ -39,7 +39,7 @@ class NetworkRequestHelper {
     }
     
     
-    // MARK: - HTTP "POST" Requests
+    //  MARK: - HTTP "POST" Requests
     
     class func taskForPOSTRequest<RequestBody: Encodable, ResponseType: Decodable>(url: URL, body: RequestBody, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
         var request = URLRequest(url: url)
@@ -72,7 +72,7 @@ class NetworkRequestHelper {
     }
     
     
-    // MARK: - HTTP "PUT" Requests
+    //  MARK: - HTTP "PUT" Requests
     
     class func taskForPUTRequest<RequestBody: Encodable, ResponseType: Decodable>(url: URL, body: RequestBody, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
         var request = URLRequest(url: url)
