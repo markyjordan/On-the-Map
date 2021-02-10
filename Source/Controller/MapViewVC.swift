@@ -70,8 +70,8 @@ class MapViewVC: UIViewController, MKMapViewDelegate {
             self.locations = locations
             
             for location in self.locations {
-                let lat = CLLocationDegrees(location.latitude ?? 0.0)
-                let long = CLLocationDegrees(location.longitude ?? 0.0)
+                let lat = CLLocationDegrees(location.latitude!)
+                let long = CLLocationDegrees(location.longitude!)
                 let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
                 let first = location.firstName ?? ""
                 let last = location.lastName ?? ""
