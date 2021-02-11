@@ -15,7 +15,7 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var webLinkTextField: UITextField!
-    @IBOutlet weak var findLocationButton: CustomButton!
+    @IBOutlet weak var findLocationButton: UIButton!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     
@@ -23,6 +23,9 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //  setup views
+        setupFindLocationButton()
         
         //  hide the keyboard when users taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
@@ -61,6 +64,11 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     
     //  MARK: - Helper Methods
+    
+    //  set 'find location' button properties
+    private func setupFindLocationButton() {
+        findLocationButton.layer.cornerRadius = Constants.buttonCornerRadius
+    }
     
     //  set loading state
     private func setLoading(_ loading: Bool) {

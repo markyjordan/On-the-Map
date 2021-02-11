@@ -82,7 +82,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    //  set login button properties
+    //  set 'login' button properties
     private func setupLoginButton() {
         loginButton.layer.cornerRadius = Constants.buttonCornerRadius
     }

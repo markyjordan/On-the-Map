@@ -280,7 +280,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJR-Ck-nLW" userLabel="Find Location Button" customClass="CustomButton" customModule="On_the_Map" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJR-Ck-nLW" userLabel="Find Location Button">
                                         <rect key="frame" x="0.0" y="120" width="342" height="50"/>
                                         <color key="backgroundColor" red="0.1058823529" green="0.67450980390000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -492,9 +492,6 @@
     <designables>
         <designable name="gkG-2t-Y8X">
             <size key="intrinsicContentSize" width="48" height="30"/>
-        </designable>
-        <designable name="hJR-Ck-nLW">
-            <size key="intrinsicContentSize" width="111" height="30"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
