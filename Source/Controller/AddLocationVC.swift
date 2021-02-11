@@ -11,7 +11,7 @@ import MapKit
 
 class AddLocationVC: UIViewController, UITextFieldDelegate {
     
-    // MARK: - Outlets/Properties
+    //  MARK: - Outlets/Properties
     
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var webLinkTextField: UITextField!
@@ -19,12 +19,12 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     
-    // MARK: - Life Cycle
+    //  MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // hide the keyboard when users taps anywhere outside a textfield
+        //  hide the keyboard when users taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
     }
     
@@ -37,32 +37,32 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     }
     
     
-    // MARK: - Navigation
+    //  MARK: - Navigation
     
-    // dismiss the 'add location' view
+    //  dismiss the 'add location' view
     @IBAction func cancelAddLocation(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    // find the user input location
+    //  find the user input location
     @IBAction func findLocation(_ sender: Any) {
         setLoading(true)
         let location = locationTextField.text
         
-        // check to see that the provided url can be opened
+        //  check to see that the provided url can be opened
         guard let url = URL(string: self.webLinkTextField.text!), UIApplication.shared.canOpenURL(url) else {
             setLoading(false)
             
-            // show an alert for an invalid URL
+            //  show an alert for an invalid URL
         }
         
         geocodeLocation(location ?? "")
         
     }
     
-    // MARK: - Helper Methods
+    //  MARK: - Helper Methods
     
-    // set loading state
+    //  set loading state
     private func setLoading(_ loading: Bool) {
         if loading {
             DispatchQueue.main.async {

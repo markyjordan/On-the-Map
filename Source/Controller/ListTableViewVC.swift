@@ -119,13 +119,13 @@ class ListTableViewVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
         let student = studentLocationData[indexPath.row]
-        cell.textLabel?.text = "\(student.firstName)" + " " + "\(student.lastName)"
-        cell.detailTextLabel?.text = "\(student.mediaURL ?? "")"
+        cell.textLabel!.text = "\(student.firstName)" + " " + "\(student.lastName)"
+        cell.detailTextLabel!.text = "\(student.mediaURL)"
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let student = students[indexPath.row]
+        let student = studentLocationData[indexPath.row]
         openURL(student.mediaURL ?? "")
     }
 }
