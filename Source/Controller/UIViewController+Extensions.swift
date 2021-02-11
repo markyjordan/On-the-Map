@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
     
     //  change button tint to reflect its current state (enabled/disabled)
-    func buttonEnabled(_ enabled: Bool, button: CustomButton) {
+    func buttonEnabled(_ enabled: Bool, button: UIButton) {
         if enabled {
             button.isEnabled = true
             button.alpha = 1.0
