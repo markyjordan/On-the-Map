@@ -92,10 +92,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         if loggingIn {
             DispatchQueue.main.async {
                 self.activityIndicatorView.startAnimating()
+                self.buttonEnabled(false, button: self.loginButton)
             }
         } else {
             DispatchQueue.main.async {
                 self.activityIndicatorView.stopAnimating()
+                self.buttonEnabled(true, button: self.loginButton)
             }
         }
         

@@ -39,12 +39,12 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     //  MARK: - Navigation
     
-    //  dismiss the 'add location' view
+    //  dismiss the 'Add Location' view
     @IBAction func cancelAddLocation(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    //  find the user input location
+    //  find the user-inputted location
     @IBAction func findLocation(_ sender: Any) {
         setLoading(true)
         let location = locationTextField.text
@@ -57,8 +57,8 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         }
         
         geocodeLocation(location ?? "")
-        
     }
+    
     
     //  MARK: - Helper Methods
     
@@ -75,6 +75,8 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
                 self.buttonEnabled(true, button: self.findLocationButton)
             }
         }
+        
+        //  enable/disable UI views
         DispatchQueue.main.async {
             self.locationTextField.isEnabled = !loading
             self.webLinkTextField.isEnabled = !loading
@@ -108,7 +110,6 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     
     private func loadNewLocation(_ coordinate: CLLocationCoordinate2D) {
         let controller = storyboard?.instantiateViewController(identifier: "LocationPreviewVC") as! LocationPreviewVC
-        
     }
     
 }
