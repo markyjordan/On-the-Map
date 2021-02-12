@@ -62,10 +62,15 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         geocodeLocation(location ?? "")
     }
     
+    //  show a preview of the geocoded location as a map view
+    private func loadNewLocation(_ coordinate: CLLocationCoordinate2D) {
+        let controller = storyboard?.instantiateViewController(identifier: "LocationPreviewVC") as! LocationPreviewVC
+    }
+    
     
     //  MARK: - Helper Methods
     
-    //  set 'find location' button properties
+    //  set 'Find Location' button properties
     private func setupFindLocationButton() {
         findLocationButton.layer.cornerRadius = Constants.buttonCornerRadius
     }
@@ -92,6 +97,7 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //  location geocoding
     private func geocodeLocation(_ location: String) {
         CLGeocoder().geocodeAddressString(location) { (placemark, error) in
             if let error = error {
@@ -116,8 +122,9 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    private func loadNewLocation(_ coordinate: CLLocationCoordinate2D) {
-        let controller = storyboard?.instantiateViewController(identifier: "LocationPreviewVC") as! LocationPreviewVC
-    }
+    
+    //  MARK: - UITextField Delegate Methods
+    
+    
     
 }
