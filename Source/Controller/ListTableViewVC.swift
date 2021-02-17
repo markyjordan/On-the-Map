@@ -126,6 +126,6 @@ class ListTableViewVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let student = studentLocationData[indexPath.row]
-        openURL(student.mediaURL ?? "")
+        openURL(student.mediaURL)
     }
 }

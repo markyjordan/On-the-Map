@@ -80,7 +80,7 @@ class UdacityNetworkClient {
         }
     }
     
-    class func getStudentLocations(completionHandler: @escaping ([StudentLocation]?, Error?) -> Void) {
+    class func getStudentLocations(completionHandler: @escaping ([StudentLocation], Error?) -> Void) {
         NetworkRequestHelper.taskForGETRequest(url: Endpoints.getStudentLocations.url, responseType: GetStudentLocationResults.self) { (response, error) in
             if let response = response {
                 completionHandler(response.results, nil)
