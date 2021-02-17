@@ -11,7 +11,7 @@ import FBSDKCoreKit
 
 class LoginVC: UIViewController, UITextFieldDelegate {
 
-    // MARK: - Outlets/Properties
+    //  MARK: - Outlets/Properties
     
     @IBOutlet weak var verticalStackView: UIStackView!
     @IBOutlet weak var emailTextField: UITextField!
@@ -23,7 +23,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     var facebookLoginButton = FBLoginButton()
     
     
-    // MARK: - Life Cycle
+    //  MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         //  configure Facebook OAuth
         setupFacebookOAuth()
         
-        //  hide the keyboard when users taps anywhere outside a textfield
+        //  hide the keyboard when the user taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
         
         //  setup textfield delegate methods
@@ -58,7 +58,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     
-    // MARK: - Navigation
+    //  MARK: - Navigation
     
     @IBAction func loginButtonTapped(_ sender: Any) {
         setLoggingIn(true)
@@ -73,7 +73,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
 
     
-    // MARK: - Helper Methods
+    //  MARK: - Helper Methods
     
     //  login network request completionHandler
     func handleLoginResponse(success: Bool, error: Error?) {
@@ -115,10 +115,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     
-    // MARK: - UITextField Delegate Methods
+    //  MARK: - UITextField Delegate Methods
     
     
-    // MARK: - OAuth
+    //  MARK: - OAuth
     
     //  Facebook Authentication
     

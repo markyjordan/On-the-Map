@@ -296,7 +296,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="findLocation:" destination="AFO-wg-QHI" eventType="touchUpInside" id="tVg-g7-Pzf"/>
+                                            <action selector="findLocationButtonTapped:" destination="AFO-wg-QHI" eventType="touchUpInside" id="kLt-Uh-hOe"/>
                                             <segue destination="UEi-bq-2J5" kind="show" identifier="locationPreview" id="g51-R7-Jwq"/>
                                         </connections>
                                     </button>
@@ -490,11 +490,6 @@
             <point key="canvasLocation" x="5022" y="128"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="gkG-2t-Y8X">
-            <size key="intrinsicContentSize" width="48" height="30"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="Caj-7H-ZwI"/>
     </inferredMetricsTieBreakers>

@@ -52,7 +52,7 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
     }
     
     //  find the user-inputted location
-    @IBAction func findLocation(_ sender: Any) {
+    @IBAction func findLocationButtonTapped(_ sender: Any) {
         setLoading(true)
         let location = locationTextField.text
         
