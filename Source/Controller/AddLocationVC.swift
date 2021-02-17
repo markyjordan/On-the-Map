@@ -29,6 +29,10 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         
         //  hide the keyboard when users taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
+        
+        //  setup textfield delegates
+        locationTextField.delegate = self
+        webLinkTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,9 +66,14 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         geocodeLocation(location ?? "")
     }
     
-    //  show a preview of the geocoded location as a map view
+    //  push a preview of the geocoded location as a map view onto the navigation stack
     private func loadNewLocation(_ coordinate: CLLocationCoordinate2D) {
-        let controller = storyboard?.instantiateViewController(identifier: "LocationPreviewVC") as! LocationPreviewVC
+        let locationPreviewVC = storyboard?.instantiateViewController(withIdentifier: "Location Preview VC") as! LocationPreviewVC
+        
+        //  populate the 'Location Preview' view with coordinate data
+        
+        //  present the view controller using navigation
+        self.navigationController!.pushViewController(locationPreviewVC, animated: true)
     }
     
     

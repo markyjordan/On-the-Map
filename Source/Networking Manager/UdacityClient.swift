@@ -50,6 +50,7 @@ class UdacityNetworkClient {
         }
     }
     
+    
     //  MARK: - Network Request Methods
     
     class func login(email: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
