@@ -37,6 +37,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         //  hide the keyboard when users taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
+        
+        //  setup textfield delegate methods
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -109,6 +113,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             self.signupButton.isEnabled = !loggingIn
         }
     }
+    
     
     // MARK: - UITextField Delegate Methods
     

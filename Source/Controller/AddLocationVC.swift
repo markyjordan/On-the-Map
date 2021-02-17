@@ -27,7 +27,7 @@ class AddLocationVC: UIViewController, UITextFieldDelegate {
         //  setup views
         setupFindLocationButton()
         
-        //  hide the keyboard when users taps anywhere outside a textfield
+        //  hide the keyboard when the user taps anywhere outside a textfield
         self.dismissKeyboardOnTap()
         
         //  setup textfield delegates
